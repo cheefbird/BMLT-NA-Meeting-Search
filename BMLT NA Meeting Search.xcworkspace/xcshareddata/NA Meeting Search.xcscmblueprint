@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F634AB1DBED88F0516687253A909F6EBCB633885",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F634AB1DBED88F0516687253A909F6EBCB633885" : 9223372036854775807,
+    "51EF477B4778939337FDFF39B8E0AA03325BE525" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "760BEB37-D55D-423F-A4A7-0DCF51D572C5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F634AB1DBED88F0516687253A909F6EBCB633885" : "NA%20Meeting%20Search\/",
+    "51EF477B4778939337FDFF39B8E0AA03325BE525" : "NA%20Meeting%20Search\/BMLTiOSLib\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NA Meeting Search",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NA Meeting Search.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:bmlt\/bmltioslib.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "51EF477B4778939337FDFF39B8E0AA03325BE525"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/bmlt\/bmlt-na-meeting-finder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F634AB1DBED88F0516687253A909F6EBCB633885"
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+/*
+ Localizable.strings
+ NA Meeting Search
+ 
+ Created by MAGSHARE
+ 
+ This is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ BMLT is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this code.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/*
+ LOCALIZATION INSTRUCTIONS
+ 
+ You should leave the text on the left side of the "=" alone.
+ You should change the text on the right side of the "=" to your preferred language.
+ Leave the quotes ("..."), and the semicolon (;) at the end of the line.
+ */
+
+/** These are the tab names for the main tabs. */
+"BMLTNAMeetingSearch-TabName-Today"                             =   "Meetings Today";
+"BMLTNAMeetingSearch-TabName-BasicSearch"                       =   "Basic Search";
+"BMLTNAMeetingSearch-TabName-AdvancedSearch"                    =   "Location Search";
+"BMLTNAMeetingSearch-TabName-Settings"                          =   "Settings & Info";
+/** These are for the results tabs. */
+"BMLTNAMeetingSearch-TabName-List"                              =   "List Results";
+"BMLTNAMeetingSearch-TabName-Map"                               =   "Map Results";
+
+/** This is displayed as the app starts, and establishes a connection to the server. */
+"BMLTNAMeetingSearch-ConnectingLabel"                           =   "Connecting to the Server...";
+
+/** General communication error text. This is displayed in an alert, if there was a communication problem. */
+"BMLTNAMeetingSearchError-CommErrorHeader"                      =   "Communication error";  // This is the header text.
+"BMLTNAMeetingSearchError-CommErrorText"                        =   "There was a problem communicating with the meeting list server.";  // This is the error description text.
+"BMLTNAMeetingSearchError-LocationOffText"                      =   "The app needs to have Location Services enabled. This is in the \"Privacy\" section of your Settings app.";   // This is the detailed explanation text.
+
+/** Location Failure text. This is displayed in an alert, if there was a location/search problem */
+"BMLTNAMeetingSearchError-LocationFailHeader"                   =   "Location Error";   // This is the header text.
+"BMLTNAMeetingSearchError-LocationFailText"                     =   "The app is unable to figure out where you are right now, so can't deliver results.";   // This is the detailed explanation text.
+
+/** No meetings found text. This is displayed in an alert, if there were no eligible meetings found. */
+"BMLTNAMeetingSearchError-NoResultsHeader"                      =   "No Meetings Found";    // This is the header text.
+"BMLTNAMeetingSearchError-NoResultsText"                        =   "No meetings were found that meet your search criteria."; // This is the detailed explanation text.
+
+/** Possible directions error header. */
+"BMLTNAMeetingSearchError-FailedDirectionsHeader"               =   "Cannot Get Directions";
+/** The text that explains it a bit better. */
+"BMLTNAMeetingSearchError-NoDirectionsResultsText"              =   "The app cannot determine accurate directions to this meeting.";
+
+"BASIC-OK-BUTTON"                                               =   "OK";
+/** The format used to create the distance number. */
+"BMLTNAMeetingSearch-DistanceFormat"                            =   "Distance: %0.2f";
+/** The units as miles. */
+"BMLTNAMeetingSearch-DistanceUnitsMiles"                        =   " Miles";
+/** The units as kilometers. */
+"BMLTNAMeetingSearch-DistanceUnitsKm"                           =   " Kilometers";
+/** The units as miles. */
+"BMLTNAMeetingSearch-DistanceUnitsMiles-Short"                  =   " Mi";
+/** The units as kilometers. */
+"BMLTNAMeetingSearch-DistanceUnitsKm-Short"                     =   " Km";
+/** Sort By Time Title. */
+"SORTBYTIME"                                                    =   "Sort by Day & Time";
+/** Sort By Distance Title. */
+"SORTBYDISTANCE"                                                =   "Sort by Distance";
+
+"FIND-MEETINGS-AUTO-LABEL"                                      =   "Auto";
+"BASIC-STRING-LABEL"                                            =   "Search For Text:";
+"ENTER-TEXT-PLACEHOLDER"                                        =   "Leave Blank for All Meetings";
+"BASIC-SEARCH-BUTTON-TEXT"                                      =   "Find Meetings";
+"BASIC-CHECK-ALL"                                               =   "Select All Weekdays";
+"BASIC-UNCHECK-ALL"                                             =   "Deselect All Weekdays";
+"BASIC-STRING-LABEL-LOCATION"                                   =   "Search Location:";
+"ENTER-TEXT-PLACEHOLDER-LOCATION"                               =   "Enter A Location To Search";
+"LOCATION-SET-ADDRESS-BUTTON"                                   =   "Set the Marker to This Location";
+
+/** Directions Button Text. */
+"DIRECTIONS-BUTTON-OFF"                                         =   "Show Route";
+"DIRECTIONS-BUTTON-ON"                                          =   "Hide Route";
+/** This is shown in the navbar. */
+"DIRECTIONS-BUTTON"                                             =   "Directions";
+/** This is shown in the marker callout. */
+"DIRECTIONS-BUTTON-CALLOUT"                                     =   "Get Directions:";
+
+/** This format is for the meeting time display in the Details View. */
+"DETAILS-SCREEN-MEETING-TIME-FORMAT"                            =   "Meets Every %@, at %@";    // The "%@" are "placeholders" that are filled with the weekday (text) and start time (time format).
+/** Strings for noon and midnight */
+"DETAILS-SCREEN-NOON"                                           =   "noon";     // If the time is 12:00 PM, we make it "Noon".
+"DETAILS-SCREEN-MIDNIGHT"                                       =   "midnight"; // If the time is 24:00/00:00, we make it "Midnight".
+
+/** The title of the Address and Directions Screen. */
+"ADDRESS-AND-DIRECTIONS"                                        =   "More Info";
+/** These are the three types of maps in the segmented control. */
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-STANDARD"                      =   "Standard Map";
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-HYBRID"                        =   "Hybrid Map";
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-SATELLITE"                     =   "Satellite Map";
+"DIRECTIONS-DONE-BUTTON"                                        =   "DONE";
+
+"SETTINGS-DENSITY-LABEL"                                        =   "Auto Search Density";
+"SETTINGS-DENSITY-MIN-SWITCH"                                   =   "Min";
+"SETTINGS-DENSITY-LESS-SWITCH"                                  =   "Less";
+"SETTINGS-DENSITY-NORMAL-SWITCH"                                =   "Normal";
+"SETTINGS-DENSITY-MORE-SWITCH"                                  =   "More";
+"SETTINGS-DENSITY-MAX-SWITCH"                                   =   "Max";
+"SETTINGS-PREFER-GOOGLE-MAPS-LABEL"                             =   "Use Google Maps for Directions";
+"SETTINGS-GRACE-PERIOD-LABEL"                                   =   "Today Search \"Grace Period\"";
+"SETTINGS-GRACE-PERIOD-INITIAL-TEXT"                            =   "Only include meetings in the \"Today\" search that:";
+
+/** More Descriptive text for the "Grace Time" Picker View */
+"BMLTNAMeetingSearch-Settings-GraceTimeText"                    =   "This allows you to specify that a meeting either hasn't started yet, or has been going on for some time before being included or excluded from your search results.";
+
+/** These are values for the "grace time" picker in the settings screen. */
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-00"        =   "60";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-00"         =   " Won't start for at least an hour ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-01"        =   "30";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-01"         =   " Won't start for at least half an hour ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-02"        =   "15";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-02"         =   " Won't start for at least fifteen minutes ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-03"        =   "0";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-03"         =   " Start now or later ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-04"        =   "-15";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-04"         =   " May already be running for fifteen minutes ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-05"        =   "-30";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-05"         =   " May already be running for half an hour ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-06"        =   "-60";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-06"         =   " May already be running for an hour ";
+
+/** The MAGSHARE Label Text */
+"GO-ME-GO-ME"                                                   =   "Another Fine MAGSHARE Project";
+
+/** The MAGSHARE Label Text */
+"MORE-INFO-BUTTON"                                              =   "More Information";
+
+/** The version label text */
+"INFO-VERSION-FORMAT"                                           =   "%@, V. %@";
+"INFO-HELP-BUTTON"                                              =   "Visit the BMLT Site";
+"INFO-DONE-BUTTON"                                              =   "DONE";
+"INFO-EXPLAIN-TEXT"                                             =   "This app is a worldwide NA meeting search. It uses the BMLT (Basic Meeting List Toolbox) to store and report meetings.\nIt has three different search modes: \"Meetings Today\", where you do a fast lookup for meetings near your location, later today or tomorrow,\n\"Basic Search\", where you can search by specific weekdays and strings (such as meeting names), near you (You can also choose specific distances from your location),\nand \"Location Search\", where you can specify locations, using a map or a text entry (and you can also specify a fixed distance).";
+/* DON'T CHANGE THESE VALUES. */
+
+/** The MAGSHARE Help URL */
+"INFO-HELP-URI"                                                 =   "https://bmlt.magshare.net/nameetingsearch";
+
+/** The default value of the "grace time" picker. The picker will be set initially to this value (usually, you should not change this for localization). */
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Default-Value"   =   "-15";

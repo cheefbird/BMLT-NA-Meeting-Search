@@ -66,7 +66,7 @@ class BMLT_MeetingSearch_MapResults_ViewController: BMLT_MeetingSearch_Results_B
     @IBAction override func actionButtonHit(_ sender: Any) {
         let sharedPrintController = UIPrintInteractionController.shared
         let printInfo = UIPrintInfo(dictionary: nil)
-        printInfo.outputType = UIPrintInfoOutputType.general
+        printInfo.outputType = UIPrintInfo.OutputType.general
         printInfo.jobName = "print Job"
         sharedPrintController.printPageRenderer = BMLT_MeetingSearch_MapResults_PageRenderer(meetings: self.searchResults, mapFormatter: self.mapView.viewPrintFormatter())
         sharedPrintController.present(from: self.view.frame, in: self.view, animated: false, completionHandler: nil)
@@ -204,7 +204,7 @@ class BMLT_MeetingSearch_MapResults_ViewController: BMLT_MeetingSearch_Results_B
             let center = CLLocationCoordinate2D(latitude: (northEast.latitude + southWest.latitude) / 2.0, longitude: (northEast.longitude + southWest.longitude) / 2.0)
             let span = MKCoordinateSpan(latitudeDelta: fabs(northEast.latitude - southWest.latitude) * 2.5, longitudeDelta: abs(northEast.longitude - southWest.longitude) * 2.25)
             
-            let spanRegion = MKCoordinateRegionMake(center, span)
+            let spanRegion = MKCoordinateRegion.init(center: center, span: span)
             
             self.mapView.setRegion(spanRegion, animated: true)
         }

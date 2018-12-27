@@ -272,7 +272,7 @@ class BMLT_MeetingSearch_MapMarkerAnnotationView: MKAnnotationView {
         var image: UIImage! = nil
         // The draggable marker is big. We need to make room for the entire animation, anchored in the center.
         if self.isDraggable {
-            if self.dragState == MKAnnotationViewDragState.dragging {
+            if self.dragState == MKAnnotationView.DragState.dragging {
                 if inAnimated { // We can animate dragging, so you can see it around your finger.
                     let bottomImage = self._animationFrames[self._currentFrame]
                     self._currentFrame += 1
@@ -350,7 +350,7 @@ class BMLT_MeetingSearch_MapMarkerAnnotationView: MKAnnotationView {
             image!.draw(in: rect)
         }
         // Dragging a marker needs animation.
-        if self.dragState == MKAnnotationViewDragState.dragging {
+        if self.dragState == MKAnnotationView.DragState.dragging {
             self.startTimer()
         }
     }
@@ -362,20 +362,20 @@ class BMLT_MeetingSearch_MapMarkerAnnotationView: MKAnnotationView {
      - parameter newDragState: The new state that should be set after this call.
      - parameter animated: True, if the state change is to be animated (ignored).
      */
-    override func setDragState(_ newDragState: MKAnnotationViewDragState, animated: Bool) {
-        var subsequentDragState = MKAnnotationViewDragState.none
+    override func setDragState(_ newDragState: MKAnnotationView.DragState, animated: Bool) {
+        var subsequentDragState = MKAnnotationView.DragState.none
         switch newDragState {
-        case MKAnnotationViewDragState.starting:
-            subsequentDragState = MKAnnotationViewDragState.dragging
+        case MKAnnotationView.DragState.starting:
+            subsequentDragState = MKAnnotationView.DragState.dragging
             self._currentFrame = 0
             
-        case MKAnnotationViewDragState.dragging:
+        case MKAnnotationView.DragState.dragging:
             self.startTimer()
-            subsequentDragState = MKAnnotationViewDragState.dragging
+            subsequentDragState = MKAnnotationView.DragState.dragging
             
         default:
             self.stopTimer()
-            subsequentDragState = MKAnnotationViewDragState.none
+            subsequentDragState = MKAnnotationView.DragState.none
         }
         
         super.dragState = subsequentDragState

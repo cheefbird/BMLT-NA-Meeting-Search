@@ -136,10 +136,10 @@ class BMLT_MeetingSearch_ListResults_PageRenderer: UIPrintPageRenderer {
         
         // What we do here, is continuously sample the display rect of the string, until we find a font size that fits the display.
         repeat {
-            var attributes: [NSAttributedStringKey: Any] = [:]
-            attributes[NSAttributedStringKey.backgroundColor] = UIColor.clear
-            attributes[NSAttributedStringKey.foregroundColor] = UIColor.black
-            attributes[NSAttributedStringKey.font] = UIFont.italicSystemFont(ofSize: fontSize)
+            var attributes: [NSAttributedString.Key: Any] = [:]
+            attributes[NSAttributedString.Key.backgroundColor] = UIColor.clear
+            attributes[NSAttributedString.Key.foregroundColor] = UIColor.black
+            attributes[NSAttributedString.Key.font] = UIFont.italicSystemFont(ofSize: fontSize)
             
             var stringContent = myMeetingObject.description
             if !myMeetingObject.comments.isEmpty {
@@ -259,10 +259,10 @@ class BMLT_MeetingSearch_SingleMeeting_PageRenderer: BMLT_MeetingSearch_ListResu
         
         // What we do here, is continuously sample the display rect of the string, until we find a font size that fits the display.
         repeat {
-            var attributes: [NSAttributedStringKey: Any] = [:]
-            attributes[NSAttributedStringKey.backgroundColor] = UIColor.clear
-            attributes[NSAttributedStringKey.foregroundColor] = UIColor.black
-            attributes[NSAttributedStringKey.font] = UIFont.italicSystemFont(ofSize: fontSize)
+            var attributes: [NSAttributedString.Key: Any] = [:]
+            attributes[NSAttributedString.Key.backgroundColor] = UIColor.clear
+            attributes[NSAttributedString.Key.foregroundColor] = UIColor.black
+            attributes[NSAttributedString.Key.font] = UIFont.italicSystemFont(ofSize: fontSize)
             
             var stringContent = myMeetingObject.description
             if !myMeetingObject.comments.isEmpty {

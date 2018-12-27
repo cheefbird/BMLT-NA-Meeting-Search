@@ -1,0 +1,152 @@
+/*
+ Localizable.strings
+ NA Meeting Search
+ 
+ Created by MAGSHARE
+ 
+ This is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ 
+ BMLT is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ 
+ You should have received a copy of the GNU General Public License
+ along with this code.  If not, see <http://www.gnu.org/licenses/>.
+ */
+/*
+ LOCALIZATION INSTRUCTIONS
+ 
+ You should leave the text on the left side of the "=" alone.
+ You should change the text on the right side of the "=" to your preferred language.
+ Leave the quotes ("..."), and the semicolon (;) at the end of the line.
+ */
+
+/** These are the tab names for the main tabs. */
+"BMLTNAMeetingSearch-TabName-Today"                             =   "M¯der I dag";
+"BMLTNAMeetingSearch-TabName-BasicSearch"                       =   "Basis S¯gning";
+"BMLTNAMeetingSearch-TabName-AdvancedSearch"                    =   "Lokalitet S¯gning";
+"BMLTNAMeetingSearch-TabName-Settings"                          =   "Indstillinger & Info";
+/** These are for the results tabs. */
+"BMLTNAMeetingSearch-TabName-List"                              =   "Liste resultater";
+"BMLTNAMeetingSearch-TabName-Map"                               =   "Kort Resultater";
+
+/** This is displayed as the app starts, and establishes a connection to the server. */
+"BMLTNAMeetingSearch-ConnectingLabel"                           =   "Forbinder til Serveren...";
+
+/** General communication error text. This is displayed in an alert, if there was a communication problem. */
+"BMLTNAMeetingSearchError-CommErrorHeader"                      =   "Kommunikationsfejl "; // Dette er header teksten.
+"BMLTNAMeetingSearchError-CommErrorText"                        =   "Der opstod et problem med at kommunikere med m¯deliste-serveren. "; // Dette er fejlbeskrivelsesteksten.
+"BMLTNAMeetingSearchError-LocationOffText"                      =   "App'en skal have aktiveret placeringstjenester. Dette er i afsnittet \"Anonymitet\" i din indstillinger-app. "; // Dette er den detaljerede forklaringstekst.
+
+/** Location Failure text. This is displayed in an alert, if there was a location/search problem */
+"BMLTNAMeetingSearchError-LocationFailHeader"                   =   "Lokalitets fejl "; // Dette er header teksten.
+"BMLTNAMeetingSearchError-LocationFailText"                     =   "App'en kan ikke finde ud af, hvor du er lige nu, sÂ det kan ikke levere resultater. "; // Dette er den detaljerede forklaringstekst.
+
+/** No meetings found text. This is displayed in an alert, if there were no eligible meetings found. */
+"BMLTNAMeetingSearchError-NoResultsHeader"                      =   "Ingen m¯der fundet ";   // Dette er header teksten.
+"BMLTNAMeetingSearchError-NoResultsText"                        =   "Der blev ikke fundet nogen m¯der, der opfylder dine s¯gekriterier. "; // Dette er den detaljerede forklaring tekst.
+
+/** Possible directions error header. */
+"BMLTNAMeetingSearchError-FailedDirectionsHeader"               =   "Kan ikke fÂ rutevejledning";
+/** The text that explains it a bit better. */
+"BMLTNAMeetingSearchError-NoDirectionsResultsText"              =   "App'en kan ikke bestemme n¯jagtige anvisninger til dette m¯de.";
+
+"BASIC-OK-BUTTON"                                               =   "OK";
+/** The format used to create the distance number. */
+"BMLTNAMeetingSearch-DistanceFormat"                            =   "Afstand: %0.2f";
+/** The units as miles. */
+"BMLTNAMeetingSearch-DistanceUnitsMiles"                        =   " Miles";
+/** The units as kilometers. */
+"BMLTNAMeetingSearch-DistanceUnitsKm"                           =   " Kilometer";
+/** The units as miles. */
+"BMLTNAMeetingSearch-DistanceUnitsMiles-Short"                  =   " Mi";
+/** The units as kilometers. */
+"BMLTNAMeetingSearch-DistanceUnitsKm-Short"                     =   " Km";
+/** Sort By Time Title. */
+"SORTBYTIME"                                                    =   "Sorter efter Dag og Tid";
+/** Sort By Distance Title. */
+"SORTBYDISTANCE"                                                =   "Sorterer Efter Afstand";
+
+"FIND-MEETINGS-AUTO-LABEL"                                      =   "Auto";
+"BASIC-STRING-LABEL"                                            =   "S¯g efter Tekst:";
+"ENTER-TEXT-PLACEHOLDER"                                        =   "Lad vÊre tom for alle m¯der";
+"BASIC-SEARCH-BUTTON-TEXT"                                      =   "Find M¯der";
+"BASIC-CHECK-ALL"                                               =   "VÊlg alle Hverdage";
+"BASIC-UNCHECK-ALL"                                             =   "FravÊlg alle Hverdage";
+"BASIC-STRING-LABEL-LOCATION"                                   =   "S¯g sted:";
+"ENTER-TEXT-PLACEHOLDER-LOCATION"                               =   "IndsÊt et Sted for S¯gning";
+"LOCATION-SET-ADDRESS-BUTTON"                                   =   "Indstil mark¯ren til denne placering";
+
+/** Directions Button Text. */
+"DIRECTIONS-BUTTON-OFF"                                         =   "Vis Rute";
+"DIRECTIONS-BUTTON-ON"                                          =   "Skjul Rute";
+/** This is shown in the navbar. */
+"DIRECTIONS-BUTTON"                                             =   "K¯rselsvejledning";
+/** This is shown in the marker callout. */
+"DIRECTIONS-BUTTON-CALLOUT"                                     =   "FÂ rutevejledning:";
+
+/** This format is for the meeting time display in the Details View. */
+"DETAILS-SCREEN-MEETING-TIME-FORMAT"                            =   "M¯des hver %@, at %@";    // Den "% @" Er "pladsholdere", der er fyldt med ugedag (tekst) og starttidspunkt (tidsformat).
+/** Strings for noon and midnight */
+"DETAILS-SCREEN-NOON"                                           =   "Middag";     // Hvis klokken er 12:00, g¯r vi det "Middag".
+"DETAILS-SCREEN-MIDNIGHT"                                       =   "Midnat"; // Hvis klokken er 24: 00/00: 00, g¯r vi det "Midnat".
+
+/** The title of the Address and Directions Screen. */
+"ADDRESS-AND-DIRECTIONS"                                        =   "Mere Info";
+/** These are the three types of maps in the segmented control. */
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-STANDARD"                      =   "Standard Kort";
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-HYBRID"                        =   "hybrid Kort";
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-SATELLITE"                     =   "Satellit Kort";
+"DIRECTIONS-DONE-BUTTON"                                        =   "F∆RDIG";
+
+"SETTINGS-DENSITY-LABEL"                                        =   "Automatisk s¯ge tÊthed";
+"SETTINGS-DENSITY-MIN-SWITCH"                                   =   "Min";
+"SETTINGS-DENSITY-LESS-SWITCH"                                  =   "Mindre";
+"SETTINGS-DENSITY-NORMAL-SWITCH"                                =   "Normal";
+"SETTINGS-DENSITY-MORE-SWITCH"                                  =   "Mere";
+"SETTINGS-DENSITY-MAX-SWITCH"                                   =   "Max";
+"SETTINGS-PREFER-GOOGLE-MAPS-LABEL"                             =   "Brug Google Maps til vejledning";
+"SETTINGS-GRACE-PERIOD-LABEL"                                   =   "S¯g I Dag \"Bestemt periode\"";
+"SETTINGS-GRACE-PERIOD-INITIAL-TEXT"                            =   "IndsÊt kun m¯der i\"I dag\" S¯gning:";
+
+/** More Descriptive text for the "Grace Time" Picker View */
+"BMLTNAMeetingSearch-Settings-GraceTimeText"                    =   "Dette giver dig mulighed for at angive, at et m¯de enten ikke er startet endnu eller har vÊret i gang i nogen tid f¯r det bliver inkluderet eller udelukket fra dine s¯geresultater.";
+
+/** These are values for the "grace time" picker in the settings screen. */
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-00"        =   "60";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-00"         =   " Starter ikke inden for en time ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-01"        =   "30";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-01"         =   " Starter ikke inden for en halv time ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-02"        =   "15";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-02"         =   " Starter ikke inden for femten Minutter ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-03"        =   "0";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-03"         =   " Starter nu eller Senere ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-04"        =   "-15";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-04"         =   " Kan vÊre startet inden for femten Minutter ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-05"        =   "-30";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-05"         =   " Kan vÊre startet inden for en halv Time ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-06"        =   "-60";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-06"         =   " Kan vÊre startet inden for en Time ";
+
+/** The MAGSHARE Label Text */
+"GO-ME-GO-ME"                                                   =   "Another Fine MAGSHARE Project";
+
+/** The MAGSHARE Label Text */
+"MORE-INFO-BUTTON"                                              =   "Mere information";
+
+/** The version label text */
+"INFO-VERSION-FORMAT"                                           =   "%@, V. %@";
+"INFO-HELP-BUTTON"                                              =   "Bes¯g BMLT-webstedet";
+"INFO-DONE-BUTTON"                                              =   "F∆RDIG";
+"INFO-EXPLAIN-TEXT"                                             =   "Denne app er en verdensomspÊndende NA m¯de s¯gning. Det bruger BMLT (Basic Meeting List Toolbox) til at gemme og rapportere m¯der. \ nDet har tre forskellige s¯gemetoder: \"M¯der i dag\", hvor du hurtigt s¯ger efter m¯der nÊr din placering, senere i dag eller i morgen,\n\"Basis S¯gning\", hvor du kan s¯ge efter bestemte hverdage og ord (som f.eks. M¯denavne), i nÊrheden af dig (Du kan ogsÂ vÊlge bestemte afstande fra din placering),\nog \"Sted S¯gning\", hvor du kan angive steder, ved hjÊlp af et kort eller en tekstindtastning (og du kan ogsÂ angive en fast afstand).";
+/* DON'T CHANGE THESE VALUES. */
+
+/** The MAGSHARE Help URL */
+"INFO-HELP-URI"                                                 =   "https://bmlt.magshare.net/nameetingsearch";
+
+/** The default value of the "grace time" picker. The picker will be set initially to this value (usually, you should not change this for localization). */
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Default-Value"   =   "-15";

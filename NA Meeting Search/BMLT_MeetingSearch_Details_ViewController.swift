@@ -141,7 +141,7 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
     @IBAction func actionButtonHit(_ sender: Any) {
         let sharedPrintController = UIPrintInteractionController.shared
         let printInfo = UIPrintInfo(dictionary: nil)
-        printInfo.outputType = UIPrintInfoOutputType.general
+        printInfo.outputType = UIPrintInfo.OutputType.general
         printInfo.jobName = "print Job"
         sharedPrintController.printPageRenderer = BMLT_MeetingSearch_SingleMeeting_PageRenderer(meeting: self.meetingData, mapFormatter: self.locationMapView.viewPrintFormatter())
         sharedPrintController.present(from: self.view.frame, in: self.view, animated: false, completionHandler: nil)
@@ -170,7 +170,7 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
         #endif
         
         if let openLink = URL(string: directionsURI) {
-            UIApplication.shared.open(openLink, options: [:], completionHandler: nil)
+            UIApplication.shared.open(openLink, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
         }
     }
 
@@ -214,7 +214,7 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
     func removeDirections() {
         for overlay in self.locationMapView.overlays {
             if !overlay.isKind(of: BMLT_MeetingSearch_Annotation.self) {
-                self.locationMapView.remove(overlay)
+                self.locationMapView.removeOverlay(overlay)
             }
         }
         
@@ -231,7 +231,7 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
             self.busyView.isHidden = false
             let mePlacemark = MKPlacemark(coordinate: self.locationMapView.userLocation.coordinate)
             let meetingPlacemark = MKPlacemark(coordinate: meetingCoords)
-            let directionsRequest = MKDirectionsRequest()
+            let directionsRequest = MKDirections.Request()
             directionsRequest.destination = MKMapItem(placemark: meetingPlacemark)
             directionsRequest.source = MKMapItem(placemark: mePlacemark)
             
@@ -267,7 +267,7 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
                                 let center = CLLocationCoordinate2D(latitude: (northEast.latitude + southWest.latitude) / 2.0, longitude: (northEast.longitude + southWest.longitude) / 2.0)
                                 let span = MKCoordinateSpan(latitudeDelta: fabs(northEast.latitude - southWest.latitude) * 2.5, longitudeDelta: abs(northEast.longitude - southWest.longitude) * 2.5)
                                 
-                                let spanRegion = MKCoordinateRegionMake(center, span)
+                                let spanRegion = MKCoordinateRegion.init(center: center, span: span)
                                 
                                 let fitRegion = self.locationMapView.regionThatFits(spanRegion)
                                 
@@ -425,4 +425,9 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
         self.directionsButtonHit(nil)
     }
 
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+private func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

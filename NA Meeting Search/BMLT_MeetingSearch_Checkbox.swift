@@ -34,7 +34,7 @@ import UIKit
         }
         set {
             self.checkedInternal = newValue
-            self.sendActions(for: UIControlEvents.valueChanged)
+            self.sendActions(for: UIControl.Event.valueChanged)
             self.setNeedsLayout()
         }
     }
@@ -49,15 +49,15 @@ import UIKit
         if let testImage = UIImage(named: "Checkbox-unselected") {
             self.bounds.size = testImage.size
             if self.checked {
-                self.setBackgroundImage(UIImage(named: "Checkbox-selected"), for: UIControlState())
-                self.setBackgroundImage(UIImage(named: "Checkbox-selected-highlight"), for: UIControlState.selected)
-                self.setBackgroundImage(UIImage(named: "Checkbox-selected-highlight"), for: UIControlState.highlighted)
-                self.setBackgroundImage(UIImage(named: "Checkbox-selected-highlight"), for: UIControlState.disabled)
+                self.setBackgroundImage(UIImage(named: "Checkbox-selected"), for: UIControl.State())
+                self.setBackgroundImage(UIImage(named: "Checkbox-selected-highlight"), for: UIControl.State.selected)
+                self.setBackgroundImage(UIImage(named: "Checkbox-selected-highlight"), for: UIControl.State.highlighted)
+                self.setBackgroundImage(UIImage(named: "Checkbox-selected-highlight"), for: UIControl.State.disabled)
             } else {
-                self.setBackgroundImage(UIImage(named: "Checkbox-unselected"), for: UIControlState())
-                self.setBackgroundImage(UIImage(named: "Checkbox-unselected-highlight"), for: UIControlState.selected)
-                self.setBackgroundImage(UIImage(named: "Checkbox-unselected-highlight"), for: UIControlState.highlighted)
-                self.setBackgroundImage(UIImage(named: "Checkbox-unselected-highlight"), for: UIControlState.disabled)
+                self.setBackgroundImage(UIImage(named: "Checkbox-unselected"), for: UIControl.State())
+                self.setBackgroundImage(UIImage(named: "Checkbox-unselected-highlight"), for: UIControl.State.selected)
+                self.setBackgroundImage(UIImage(named: "Checkbox-unselected-highlight"), for: UIControl.State.highlighted)
+                self.setBackgroundImage(UIImage(named: "Checkbox-unselected-highlight"), for: UIControl.State.disabled)
             }
         }
     }

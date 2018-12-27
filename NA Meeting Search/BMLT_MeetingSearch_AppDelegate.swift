@@ -101,7 +101,7 @@ class BMLT_MeetingSearch_AppDelegate: UIResponder, UIApplicationDelegate, BMLTiO
             if nil != presentedBy {
                 let alertController = UIAlertController(title: inTitle.localizedVariant, message: inMessage.localizedVariant, preferredStyle: .alert)
                 
-                let okAction = UIAlertAction(title: "BASIC-OK-BUTTON".localizedVariant, style: UIAlertActionStyle.cancel, handler: nil)
+                let okAction = UIAlertAction(title: "BASIC-OK-BUTTON".localizedVariant, style: UIAlertAction.Style.cancel, handler: nil)
                 
                 alertController.addAction(okAction)
                 
@@ -121,7 +121,7 @@ class BMLT_MeetingSearch_AppDelegate: UIResponder, UIApplicationDelegate, BMLTiO
      
      - returns: True, if the app is to start. If false, then the startup is aborted.
      */
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         return true
     }
     

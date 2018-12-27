@@ -130,7 +130,7 @@ import BMLTiOSLib
     @IBAction override func actionButtonHit(_ sender: Any) {
         let sharedPrintController = UIPrintInteractionController.shared
         let printInfo = UIPrintInfo(dictionary: nil)
-        printInfo.outputType = UIPrintInfoOutputType.general
+        printInfo.outputType = UIPrintInfo.OutputType.general
         printInfo.jobName = "print Job"
         sharedPrintController.printPageRenderer = BMLT_MeetingSearch_ListResults_PageRenderer(meetings: self.searchResults)
         sharedPrintController.present(from: self.view.frame, in: self.view, animated: false, completionHandler: nil)
@@ -234,7 +234,7 @@ import BMLTiOSLib
         let meeting = self.searchResults[indexPath.row]
         let reuseID: String = String(meeting.id)
         
-        let ret = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: reuseID)
+        let ret = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: reuseID)
         
         if let cell = UINib(nibName: "BMLT_MeetingSearch_Results_TableCellView", bundle: nil).instantiate(withOwner: self, options: nil)[0] as? BMLT_MeetingSearch_Results_TableCellView {
             cell.meetingDescriptionTextView.text = meeting.description

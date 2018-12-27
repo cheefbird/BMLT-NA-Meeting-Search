@@ -341,7 +341,7 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
      */
     func removeDistanceOverlay() {
         if nil != self.distanceOverlay {
-            self.mapView.remove(self.distanceOverlay)
+            self.mapView.removeOverlay(self.distanceOverlay)
             self.distanceOverlay = nil
         }
     }
@@ -355,7 +355,7 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
         if self.autoSwitch.isOn && (0 < self.distance) && (nil != self.searchLocation) {
             let distanceInKM: Double = Double(self.distance) * (BMLT_MeetingSearch_Prefs.usingKilometeres ? 1.0 : 1.60934)
             self.distanceOverlay = MKCircle(center: self.searchLocation, radius: distanceInKM * 1000)
-            self.mapView.add(self.distanceOverlay)
+            self.mapView.addOverlay(self.distanceOverlay)
         }
     }
 
@@ -557,7 +557,7 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
      - parameter didChange: The new state of the marker.
      - parameter fromOldState: The previous state of the marker.
      */
-    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationViewDragState, fromOldState oldState: MKAnnotationViewDragState) {
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, didChange newState: MKAnnotationView.DragState, fromOldState oldState: MKAnnotationView.DragState) {
         switch newState {
         case .dragging:
             self.removeDistanceOverlay()

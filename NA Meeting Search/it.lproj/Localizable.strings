@@ -24,6 +24,8 @@
  You should change the text on the right side of the "=" to your preferred language.
  Leave the quotes ("..."), and the semicolon (;) at the end of the line.
  */
+/** The Location Description String. */
+"LOCAL-LOCATION-FLAG"                       =   "Questa app ha bisogno di sapere dove sei per poter trovare la riunione o l'indirizzo in cui ti trovi.";   /**< This is the message shown by the location permissions alert. */
 
 /** These are the tab names for the main tabs. */
 "BMLTNAMeetingSearch-TabName-Today"                             =   "Riunioni oggi"; // "Meetings Today"

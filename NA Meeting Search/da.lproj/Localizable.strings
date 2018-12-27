@@ -146,7 +146,7 @@
 /* DON'T CHANGE THESE VALUES. */
 
 /** The MAGSHARE Help URL */
-"INFO-HELP-URI"                                                 =   "https://bmlt.magshare.net/nameetingsearch";
+"INFO-HELP-URI"                                                 =   "https://bmlt.app/nameetingsearch";
 
 /** The default value of the "grace time" picker. The picker will be set initially to this value (usually, you should not change this for localization). */
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Default-Value"   =   "-15";

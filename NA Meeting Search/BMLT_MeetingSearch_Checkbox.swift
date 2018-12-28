@@ -70,7 +70,7 @@ import UIKit
         :param: event The event driving the touch.
     */
     override func endTracking(_ touch: UITouch?, with event: UIEvent?) {
-        if((nil != touch) && (nil != self.hitTest(touch!.location(in: self), with: event))) {
+        if(nil != touch) && (nil != self.hitTest(touch!.location(in: self), with: event)) {
             self.checked = !self.checked
         }
     }

@@ -29,8 +29,9 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 
 ## CHANGELIST ##
 
-***Version 1.1.2.2000* ** *- December 27, 2018*
+***Version 1.1.2.2002* ** *- December 28, 2018*
 
+- Updated to the latest BMLTiOSLib
 - Added Danish localization
 - Fixed a minor issue with Italian localization.
 - Updated to Swift 4.2 and latest Xcode support.

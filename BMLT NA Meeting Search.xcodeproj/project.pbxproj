@@ -264,7 +264,6 @@
 				77C69F171F2E8826002278FB /* Resources */,
 				778486C41F3A946600963A26 /* Copy BMLTiOSLib Framework */,
 				CCA392B9401D8804B479E49D /* [CP] Embed Pods Frameworks */,
-				DF3CA9163318A7D59311E33C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,9 +353,9 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-BMLT NA Meeting Search/Pods-BMLT NA Meeting Search-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-BMLT NA Meeting Search/Pods-BMLT NA Meeting Search-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BMLTiOSLib/BMLTiOSLib.framework",
-				"${PODS_ROOT}/Reveal-SDK/RevealServer-13/iOS/RevealServer.framework",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-20/iOS/RevealServer.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeableTabBarController/SwipeableTabBarController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -367,22 +366,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BMLT NA Meeting Search/Pods-BMLT NA Meeting Search-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DF3CA9163318A7D59311E33C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BMLT NA Meeting Search/Pods-BMLT NA Meeting Search-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BMLT NA Meeting Search/Pods-BMLT NA Meeting Search-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF7BECE602202349AC6BFBF9 /* [CP] Check Pods Manifest.lock */ = {

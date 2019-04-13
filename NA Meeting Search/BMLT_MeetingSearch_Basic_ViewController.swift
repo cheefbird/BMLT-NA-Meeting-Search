@@ -106,7 +106,7 @@ class BMLT_MeetingSearch_Basic_ViewController: BMLT_MeetingSearch_RootViewContro
     @IBAction func weekdayCheckboxChanged(_ sender: BMLT_MeetingSearch_Checkbox) {
         self.checkSearchButtonEnabledStatus()
         
-        if var selectedIndex = self.weekdayCheckboxes.index(of: sender) {
+        if var selectedIndex = self.weekdayCheckboxes.firstIndex(of: sender) {
             selectedIndex += BMLT_MeetingSearch_Prefs.indexOfWeekStart
             if 6 < selectedIndex {
                 selectedIndex -= 7
@@ -135,7 +135,7 @@ class BMLT_MeetingSearch_Basic_ViewController: BMLT_MeetingSearch_RootViewContro
      
      - parameter: ignored
      */
-    @IBAction func doSearchHit(_ : Any) {
+    @IBAction func doSearchHit(_ : Any!) {
         var atleastOneWeekdayChecked = false
         
         for weekday in 0..<7 where weekdayCheckboxes[weekday].checked {

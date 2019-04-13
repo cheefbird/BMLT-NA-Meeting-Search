@@ -105,7 +105,7 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
      
      - parameter: ignored
      */
-    @IBAction func setLocationButtonHit(_ : Any) {
+    @IBAction func setLocationButtonHit(_ : Any!) {
         if !self.searchString.isEmpty {
             self.tappedInBackground()   // Put away the keyboard.
             self.lookUpAddress(self.searchString)
@@ -142,7 +142,7 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
      
      - parameter: ignored
      */
-    @IBAction func doSearchHit(_ : Any) {
+    @IBAction func doSearchHit(_ : Any!) {
         self.stopLookingUpMyLocation()
         if (nil != searchLocation) && (!self.autoSwitch.isOn || (0 < self.distance)) {
             self.performSegue(withIdentifier: self._mainSearchSegueID, sender: nil)
@@ -199,6 +199,8 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
                 
             case .notDetermined, .authorizedAlways, .authorizedWhenInUse:
                 goodLoc = true
+            @unknown default:
+                <#fatalError()#>
             }
         }
         

@@ -176,7 +176,7 @@ class BMLT_MeetingSearch_Settings_ViewController: BMLT_MeetingSearch_RootViewCon
             }
         }
 
-        if let index = self._densityValues.index(of: self.prefs.autoSearchDensity) {
+        if let index = self._densityValues.firstIndex(of: self.prefs.autoSearchDensity) {
             self.autoDistanceSwitch.selectedSegmentIndex = index
         } else {
             self.autoDistanceSwitch.selectedSegmentIndex = 5

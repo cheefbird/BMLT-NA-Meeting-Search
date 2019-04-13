@@ -200,7 +200,7 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
             case .notDetermined, .authorizedAlways, .authorizedWhenInUse:
                 goodLoc = true
             @unknown default:
-                <#fatalError()#>
+                fatalError("WTF, Dude?")
             }
         }
         

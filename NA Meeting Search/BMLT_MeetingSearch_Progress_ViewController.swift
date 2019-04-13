@@ -237,7 +237,7 @@ class BMLT_MeetingSearch_Progress_ViewController: BMLT_MeetingSearch_Subsequent_
             case .notDetermined, .authorizedAlways, .authorizedWhenInUse:
                 goodLoc = true
             @unknown default:
-                <#fatalError()#>
+                fatalError("WTF, Dude?")
             }
         }
         

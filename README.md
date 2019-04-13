@@ -29,6 +29,8 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 
 ## CHANGELIST ##
 
+***Version 1.1.3.1000* ** *- TBD*
+
 ***Version 1.1.2.2002* ** *- December 28, 2018*
 
 - Updated to the latest BMLTiOSLib

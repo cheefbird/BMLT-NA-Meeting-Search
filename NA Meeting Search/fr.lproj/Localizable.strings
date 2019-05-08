@@ -24,125 +24,127 @@
  You should change the text on the right side of the "=" to your preferred language.
  Leave the quotes ("..."), and the semicolon (;) at the end of the line.
  */
+/** The Location Description String. */
+"LOCAL-LOCATION-FLAG"                       =   "Questa app ha bisogno di sapere dove sei per poter trovare la riunione o l'indirizzo in cui ti trovi.";   /**< This is the message shown by the location permissions alert. */
 
 /** These are the tab names for the main tabs. */
-"BMLTNAMeetingSearch-TabName-Today"                             =   "Meetings Today";
-"BMLTNAMeetingSearch-TabName-BasicSearch"                       =   "Basic Search";
-"BMLTNAMeetingSearch-TabName-AdvancedSearch"                    =   "Location Search";
-"BMLTNAMeetingSearch-TabName-Settings"                          =   "Settings & Info";
+"BMLTNAMeetingSearch-TabName-Today"                             =   "Réunions aujourd'hui"; // "Meetings Today"
+"BMLTNAMeetingSearch-TabName-BasicSearch"                       =   "Recherche simple"; // "Basic Search"
+"BMLTNAMeetingSearch-TabName-AdvancedSearch"                    =   "Rechercher un lieu"; // "Location Search"
+"BMLTNAMeetingSearch-TabName-Settings"                          =   "Réglages"; // "Settings & Info"
 /** These are for the results tabs. */
-"BMLTNAMeetingSearch-TabName-List"                              =   "List Results";
-"BMLTNAMeetingSearch-TabName-Map"                               =   "Map Results";
+"BMLTNAMeetingSearch-TabName-List"                              =   "Liste des résultats"; // "List Results"
+"BMLTNAMeetingSearch-TabName-Map"                               =   "Résultats de la carte"; // "Map Results"
 
 /** This is displayed as the app starts, and establishes a connection to the server. */
-"BMLTNAMeetingSearch-ConnectingLabel"                           =   "Connecting to the Server...";
+"BMLTNAMeetingSearch-ConnectingLabel"                           =   "Connexion au serveur ..."; // "Connecting to the Server..."
 
 /** General communication error text. This is displayed in an alert, if there was a communication problem. */
-"BMLTNAMeetingSearchError-CommErrorHeader"                      =   "Communication error";  // This is the header text.
-"BMLTNAMeetingSearchError-CommErrorText"                        =   "There was a problem communicating with the meeting list server.";  // This is the error description text.
-"BMLTNAMeetingSearchError-LocationOffText"                      =   "The app needs to have Location Services enabled. This is in the \"Privacy\" section of your Settings app.";   // This is the detailed explanation text.
+"BMLTNAMeetingSearchError-CommErrorHeader"                      =   "Erreur de communication"; // "Communication error" - This is the header text.
+"BMLTNAMeetingSearchError-CommErrorText"                        =   "Un problème de communication avec le serveur de réunion s'est produit."; // "There was a problem communicating with the meeting list server." - This is the error description text.
+"BMLTNAMeetingSearchError-LocationOffText"                      =   "Pour que l'application fonctionne, vous devez activer les services de localisation, situés dans \"Paramètres\" > \Confidentialité\" "."; // "The app needs to have Location Services enabled. This is in the \"Privacy\" section of your Settings app." - This is the detailed explanation text.
 
 /** Location Failure text. This is displayed in an alert, if there was a location/search problem */
-"BMLTNAMeetingSearchError-LocationFailHeader"                   =   "Location Error";   // This is the header text.
-"BMLTNAMeetingSearchError-LocationFailText"                     =   "The app is unable to figure out where you are right now, so can't deliver results.";   // This is the detailed explanation text.
+"BMLTNAMeetingSearchError-LocationFailHeader"                   =   "Erreur de localisation"; // "Location Error" - This is the header text.
+"BMLTNAMeetingSearchError-LocationFailText"                     =   "L'application ne parvient pas à vous localiser et est incapable de fournir des résultats."; // "The app is unable to figure out where you are right now, so can't deliver results."   // This is the detailed explanation text.
 
 /** No meetings found text. This is displayed in an alert, if there were no eligible meetings found. */
-"BMLTNAMeetingSearchError-NoResultsHeader"                      =   "No Meetings Found";    // This is the header text.
-"BMLTNAMeetingSearchError-NoResultsText"                        =   "No meetings were found that meet your search criteria."; // This is the detailed explanation text.
+"BMLTNAMeetingSearchError-NoResultsHeader"                      =   "Aucune réunion trouvée"; // "No Meetings Found"    // This is the header text.
+"BMLTNAMeetingSearchError-NoResultsText"                        =   "Aucune rencontre avec ces critères de recherche."; // "No meetings were found that meet your search criteria." - This is the detailed explanation text.
 
 /** Possible directions error header. */
-"BMLTNAMeetingSearchError-FailedDirectionsHeader"               =   "Cannot Get Directions";
+"BMLTNAMeetingSearchError-FailedDirectionsHeader"               =   "Aucune direction n'a pu être donnée"; // "Cannot Get Directions"
 /** The text that explains it a bit better. */
-"BMLTNAMeetingSearchError-NoDirectionsResultsText"              =   "The app cannot determine accurate directions to this meeting.";
+"BMLTNAMeetingSearchError-NoDirectionsResultsText"              =   "L'application ne peut pas donner des instructions précises pour cette réunion."; // "The app cannot determine accurate directions to this meeting."
 
 "BASIC-OK-BUTTON"                                               =   "OK";
 /** The format used to create the distance number. */
-"BMLTNAMeetingSearch-DistanceFormat"                            =   "Distance: %0.2f";
+"BMLTNAMeetingSearch-DistanceFormat"                            =   "Distance: %0.2f"; // "Distance: %0.2f"
 /** The units as miles. */
-"BMLTNAMeetingSearch-DistanceUnitsMiles"                        =   " Miles";
+"BMLTNAMeetingSearch-DistanceUnitsMiles"                        =   " Miles"; // " Miles"
 /** The units as kilometers. */
-"BMLTNAMeetingSearch-DistanceUnitsKm"                           =   " Kilometers";
+"BMLTNAMeetingSearch-DistanceUnitsKm"                           =   " Kilomètres"; // " Kilometers"
 /** The units as miles. */
-"BMLTNAMeetingSearch-DistanceUnitsMiles-Short"                  =   " Mi";
+"BMLTNAMeetingSearch-DistanceUnitsMiles-Short"                  =   " Mi"; // " Mi"
 /** The units as kilometers. */
-"BMLTNAMeetingSearch-DistanceUnitsKm-Short"                     =   " Km";
+"BMLTNAMeetingSearch-DistanceUnitsKm-Short"                     =   " km"; // " Km"
 /** Sort By Time Title. */
-"SORTBYTIME"                                                    =   "Sort by Day & Time";
+"SORTBYTIME"                                                    =   "Jour et heure"; // "Sort by Day & Time"
 /** Sort By Distance Title. */
-"SORTBYDISTANCE"                                                =   "Sort by Distance";
+"SORTBYDISTANCE"                                                =   "Distance"; // "Sort by Distance"
 
-"FIND-MEETINGS-AUTO-LABEL"                                      =   "Auto";
-"BASIC-STRING-LABEL"                                            =   "Search For Text:";
-"ENTER-TEXT-PLACEHOLDER"                                        =   "Leave Blank for All Meetings";
-"BASIC-SEARCH-BUTTON-TEXT"                                      =   "Find Meetings";
-"BASIC-CHECK-ALL"                                               =   "Select All Weekdays";
-"BASIC-UNCHECK-ALL"                                             =   "Deselect All Weekdays";
-"BASIC-STRING-LABEL-LOCATION"                                   =   "Search Location:";
-"ENTER-TEXT-PLACEHOLDER-LOCATION"                               =   "Enter A Location To Search";
-"LOCATION-SET-ADDRESS-BUTTON"                                   =   "Set the Marker to This Location";
+"FIND-MEETINGS-AUTO-LABEL"                                      =   "Automatique"; // "Auto"
+"BASIC-STRING-LABEL"                                            =   "Recherche par texte:"; // "Search For Text:"
+"ENTER-TEXT-PLACEHOLDER"                                        =   "Laisser en blanc pour toutes les réunions "; // "Leave Blank for All Meetings"
+"BASIC-SEARCH-BUTTON-TEXT"                                      =   "Trouver des réunions"; // "Find Meetings"
+"BASIC-CHECK-ALL"                                               =   "Sélectionnez tous les jours"; // "Select All Weekdays"
+"BASIC-UNCHECK-ALL"                                             =   "Désélectionner chaque jour"; // "Deselect All Weekdays"
+"BASIC-STRING-LABEL-LOCATION"                                   =   "Rechercher un lieu:"; // "Search Location:"
+"ENTER-TEXT-PLACEHOLDER-LOCATION"                               =   "Entrez le lieu de recherche"; // "Enter A Location To Search"
+"LOCATION-SET-ADDRESS-BUTTON"                                   =   "Placez le pointeur"; // "Set the Marker to This Location"
 
 /** Directions Button Text. */
-"DIRECTIONS-BUTTON-OFF"                                         =   "Show Route";
-"DIRECTIONS-BUTTON-ON"                                          =   "Hide Route";
+"DIRECTIONS-BUTTON-OFF"                                         =   "Afficher l'itinéraire"; // "Show Route"
+"DIRECTIONS-BUTTON-ON"                                          =   "Masquer l'itinéraire"; // "Hide Route"
 /** This is shown in the navbar. */
-"DIRECTIONS-BUTTON"                                             =   "Directions";
+"DIRECTIONS-BUTTON"                                             =   "indications"; // "Directions"
 /** This is shown in the marker callout. */
-"DIRECTIONS-BUTTON-CALLOUT"                                     =   "Get Directions:";
+"DIRECTIONS-BUTTON-CALLOUT"                                     =   "Obtenir les directions:"; // "Get Directions:"
 
 /** This format is for the meeting time display in the Details View. */
-"DETAILS-SCREEN-MEETING-TIME-FORMAT"                            =   "Meets Every %@, at %@";    // The "%@" are "placeholders" that are filled with the weekday (text) and start time (time format).
+"DETAILS-SCREEN-MEETING-TIME-FORMAT"                            =   "Il se tient tous les %@, aux heures %@"; // "Meets Every %@, at %@" - The "%@" are "placeholders" that are filled with the weekday (text) and start time (time format).
 /** Strings for noon and midnight */
-"DETAILS-SCREEN-NOON"                                           =   "noon";     // If the time is 12:00 PM, we make it "Noon".
-"DETAILS-SCREEN-MIDNIGHT"                                       =   "midnight"; // If the time is 24:00/00:00, we make it "Midnight".
+"DETAILS-SCREEN-NOON"                                           =   "midi"; // "noon"     // If the time is 12:00 PM, we make it "Noon".
+"DETAILS-SCREEN-MIDNIGHT"                                       =   "minuit"; // "midnight" // If the time is 24:00/00:00, we make it "Midnight".
 
 /** The title of the Address and Directions Screen. */
-"ADDRESS-AND-DIRECTIONS"                                        =   "More Info";
+"ADDRESS-AND-DIRECTIONS"                                        =   "Plus d'informations"; // "More Info"
 /** These are the three types of maps in the segmented control. */
-"ADDRESS-AND-DIRECTIONS-MAP-TYPE-STANDARD"                      =   "Standard Map";
-"ADDRESS-AND-DIRECTIONS-MAP-TYPE-HYBRID"                        =   "Hybrid Map";
-"ADDRESS-AND-DIRECTIONS-MAP-TYPE-SATELLITE"                     =   "Satellite Map";
-"DIRECTIONS-DONE-BUTTON"                                        =   "DONE";
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-STANDARD"                      =   "Carte standard"; // "Standard Map"
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-HYBRID"                        =   "Carte hybride"; // "Hybrid Map"
+"ADDRESS-AND-DIRECTIONS-MAP-TYPE-SATELLITE"                     =   "Carte satellite"; // "Satellite Map"
+"DIRECTIONS-DONE-BUTTON"                                        =   "Fait"; // "DONE"
 
-"SETTINGS-DENSITY-LABEL"                                        =   "Auto Search Density";
-"SETTINGS-DENSITY-MIN-SWITCH"                                   =   "Min";
-"SETTINGS-DENSITY-LESS-SWITCH"                                  =   "Less";
-"SETTINGS-DENSITY-NORMAL-SWITCH"                                =   "Normal";
-"SETTINGS-DENSITY-MORE-SWITCH"                                  =   "More";
-"SETTINGS-DENSITY-MAX-SWITCH"                                   =   "Max";
-"SETTINGS-PREFER-GOOGLE-MAPS-LABEL"                             =   "Use Google Maps for Directions";
-"SETTINGS-GRACE-PERIOD-LABEL"                                   =   "Today Search \"Grace Period\"";
-"SETTINGS-GRACE-PERIOD-INITIAL-TEXT"                            =   "Only include meetings in the \"Today\" search that:";
+"SETTINGS-DENSITY-LABEL"                                        =   "Densité de recherche automatique"; // "Auto Search Density"
+"SETTINGS-DENSITY-MIN-SWITCH"                                   =   "Min"; // "Min"
+"SETTINGS-DENSITY-LESS-SWITCH"                                  =   "Moins"; // "Less"
+"SETTINGS-DENSITY-NORMAL-SWITCH"                                =   "Normale"; // "Normal"
+"SETTINGS-DENSITY-MORE-SWITCH"                                  =   "Plus"; // "Plus"
+"SETTINGS-DENSITY-MAX-SWITCH"                                   =   "Max"; // "Max"
+"SETTINGS-PREFER-GOOGLE-MAPS-LABEL"                             =   "Utiliser Google Maps pour les directions"; // "Use Google Maps for Directions"
+"SETTINGS-GRACE-PERIOD-LABEL"                                   =   "Période de grâce"; // "Today Search \"Grace Period\""
+"SETTINGS-GRACE-PERIOD-INITIAL-TEXT"                            =   "Inclure uniquement les réunions:"; // "Only include meetings in the \"Today\" search that:"
 
 /** More Descriptive text for the "Grace Time" Picker View */
-"BMLTNAMeetingSearch-Settings-GraceTimeText"                    =   "This allows you to specify that a meeting either hasn't started yet, or has been going on for some time before being included or excluded from your search results.";
+"BMLTNAMeetingSearch-Settings-GraceTimeText"                    =   "Il est utilisé pour définir une marge de temps et spécifier si une réunion n'a pas encore commencé ou si elle est déjà en cours avant d'être incluse ou exclue des résultats de la recherche."; // "This allows you to specify that a meeting either hasn't started yet, or has been going on for some time before being included or excluded from your search results."
 
 /** These are values for the "grace time" picker in the settings screen. */
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-00"        =   "60";
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-00"         =   " Won't start for at least an hour ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-00"         =   " qui ne commence pas avant\'maintenant "; // " Won't start for at least an hour "
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-01"        =   "30";
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-01"         =   " Won't start for at least half an hour ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-01"         =   " qui ne commence pas avant un demi\'maintenant "; // " Won't start for at least half an hour "
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-02"        =   "15";
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-02"         =   " Won't start for at least fifteen minutes ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-02"         =   " cela ne commence pas avant 15 minutes "; // " Won't start for at least fifteen minutes "
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-03"        =   "0";
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-03"         =   " Start now or later ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-03"         =   " à partir de maintenant ou plus tard "; // " Start now or later "
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-04"        =   "-15";
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-04"         =   " May already be running for fifteen minutes ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-04"         =   " déjà commencé à partir de 15 minutes maximum "; // " May already be running for fifteen minutes "
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-05"        =   "-30";
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-05"         =   " May already be running for half an hour ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-05"         =   " Possiblement en cours depuis une demi-heure "; // " May already be running for half an hour "
 "BMLTNAMeetingSearch-Settings-GraceTime-Picker-Value-06"        =   "-60";
-"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-06"         =   " May already be running for an hour ";
+"BMLTNAMeetingSearch-Settings-GraceTime-Picker-Text-06"         =   " possiblement en coursdepuis une heure "; // " May already be running for an hour "
 
 /** The MAGSHARE Label Text */
-"GO-ME-GO-ME"                                                   =   "Another Fine MAGSHARE Project";
+"GO-ME-GO-ME"                                                   =   "Un altro bel progetto MAGSHARE"; // "Another Fine MAGSHARE Project"
 
 /** The MAGSHARE Label Text */
-"MORE-INFO-BUTTON"                                              =   "More Information";
+"MORE-INFO-BUTTON"                                              =   "Più informazioni"; // "More Information"
 
 /** The version label text */
-"INFO-VERSION-FORMAT"                                           =   "%@, V. %@";
-"INFO-HELP-BUTTON"                                              =   "Visit the BMLT Site";
-"INFO-DONE-BUTTON"                                              =   "DONE";
-"INFO-EXPLAIN-TEXT"                                             =   "This app is a worldwide NA meeting search. It uses the BMLT (Basic Meeting List Toolbox) to store and report meetings.\nIt has three different search modes: \"Meetings Today\", where you do a fast lookup for meetings near your location, later today or tomorrow,\n\"Basic Search\", where you can search by specific weekdays and strings (such as meeting names), near you (You can also choose specific distances from your location),\nand \"Location Search\", where you can specify locations, using a map or a text entry (and you can also specify a fixed distance).";
+"INFO-VERSION-FORMAT"                                           =   "%@, V. %@"; // "%@, V. %@"
+"INFO-HELP-BUTTON"                                              =   "Visitez le site web de BMLT"; // "Visit the BMLT Site"
+"INFO-DONE-BUTTON"                                              =   "FAIT"; // "DONE"
+"INFO-EXPLAIN-TEXT"                                             =   "Cette application recherche les réunions NA dans le monde entier et utilise la boîte à outils BMLT (Basic Meeting List Toolbox).\nIl est basé sur trois méthodes de recherche différentes: \"Réunions aujourd'hui\", jeter-y un coup d'œil sur vos réunions d'aujourd'hui et de demain,\n\"Recherche simple\", trouver des réunions dans des jours ou des chaînes de texte spécifiques (comme un nom de groupe), près de chez vous (vous pouvez également choisir des distances spécifiques de l'endroit où vous vous trouvez),\ne \"Rechercher un lieu\", pour spécifier un lieu à l'aide d'une carte ou de la saisie de texte (vous pouvez également définir une distance fixe)."; // "This app is a worldwide NA meeting search. It uses the BMLT (Basic Meeting List Toolbox) to store and report meetings.\nIt has three different search modes: \"Meetings Today\", where you do a fast lookup for meetings near your location, later today or tomorrow,\n\"Basic Search\", where you can search by specific weekdays and strings (such as meeting names), near you (You can also choose specific distances from your location),\nand \"Location Search\", where you can specify locations, using a map or a text entry (and you can also specify a fixed distance)."
 /* DON'T CHANGE THESE VALUES. */
 
 /** The MAGSHARE Help URL */

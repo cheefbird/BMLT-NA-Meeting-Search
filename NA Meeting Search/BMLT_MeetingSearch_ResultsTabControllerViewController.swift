@@ -20,13 +20,12 @@
 import UIKit
 import BMLTiOSLib
 import MapKit
-import SwipeableTabBarController
 
 /* ###################################################################################################################################### */
 /**
  This is a tab controller class for the tab controller that displays the two results root screens.
  */
-class BMLT_MeetingSearch_ResultsTabControllerViewController: SwipeableTabBarController {
+class BMLT_MeetingSearch_ResultsTabControllerViewController: UITabBarController {
     // MARK: - Instance Properties
     /* ################################################################################################################################## */
     /* ################################################################## */
@@ -65,7 +64,7 @@ class BMLT_MeetingSearch_ResultsTabControllerViewController: SwipeableTabBarCont
      If the search was initiated from the map search, this will be set to true.
      */
     var searchWasAMapSearch: Bool {
-        return self.myOwner.searchWasAMapSearch
+        return self.myOwner?.searchWasAMapSearch ?? false
     }
 
     // MARK: - Base Class Override Methods
@@ -78,7 +77,6 @@ class BMLT_MeetingSearch_ResultsTabControllerViewController: SwipeableTabBarCont
         super.viewDidLoad()
         self.tabBar.unselectedItemTintColor = self.tabBar.tintColor.withAlphaComponent(0.5)
         
-        self.isSwipeEnabled = false // We disable the swipe, because we'll be providing our own.
         if let controllers = self.viewControllers {
             for theController in controllers {
                 theController.tabBarItem.title = theController.tabBarItem.title?.localizedVariant
@@ -96,11 +94,18 @@ class BMLT_MeetingSearch_ResultsTabControllerViewController: SwipeableTabBarCont
                     }
                 }
             }
-            
-            // If this was called from the location/map search, our initial view is the map, as opposed to the list.
-            if self.searchWasAMapSearch {
-                self.selectedViewController = self.mapViewController
-            }
+        }
+    }
+    
+    /* ################################################################## */
+    /**
+     Called when the view is about to appear.
+     */
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // If this was called from the location/map search, our initial view is the map, as opposed to the list.
+        if self.searchWasAMapSearch {
+            self.selectedViewController = self.mapViewController
         }
     }
 }

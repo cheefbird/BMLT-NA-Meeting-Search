@@ -6,18 +6,19 @@ Yes, the damn repo is labeled "NA Meeting Finder." That's my fault. "Search" is 
 
 It is provided by [the BMLT developers](https://bmlt.magshare.net).
 
-It uses [the worldwide version](https://na-bmlt.org/_/sandwich/) of [the Sandwich server](http://archsearch.org/sandwich/) to locate meetings, using [the BMLTiOSLib iOS Framework](https://bmlt.magshare.net/specific-topics/bmltioslib/).
-The project also uses [the excellent SwipeableTabBarController Project by Marco Griselli](https://github.com/marcosgriselli/SwipeableTabBarController). It does not use it as a [CocoaPod](https://cocoapods.org). Instead, it simply uses the files directly _(This is because we don't want to require that implmentors install the CocoaPods system -which is very nice, but an extra complication. As a result of this restriction, we've made a couple of very small -and clearly marked- modifications to the Swipeable TabBarController project to make it work in our environment.)_
+It uses [the worldwide version](https://tomato.na-bmlt.org/main_server/) of [the Root Server](https://bmlt.app/installing-a-new-root-server/) to locate meetings, using [the BMLTiOSLib iOS Framework](https://bmlt.magshare.net/specific-topics/bmltioslib/).
 
 ### This Repository Is 100% of the Source Code for This Project ###
 
-* Like all [BMLT](https://bmlt.magshare.net)  projects, this is a completely open-source project. There is no hidden or proprietary code anywhere.
+[This is the repository for this project.](https://github.com/bmlt-enabled/BMLT-NA-Meeting-Search)
+
+* Like all [BMLT](https://bmlt.app)  projects, this is a completely open-source project. There is no hidden or proprietary code anywhere.
 
 ### Setup ###
 
-* This is an [Apple Xcode](https://developer.apple.com/xcode/) project, using [Swift](https://developer.apple.com/swift/) language, version 4. It requires Xcode Version 9, at minimum.
-* The project requires [the BMLTiOSLib iOS Framework](https://bmlt.magshare.net/specific-topics/bmltioslib/). If you include the [Git repo for this project](https://bitbucket.org/bmlt/bmlt-na-meeting-finder), you will have the BMLTiOSLib included as a [Git Submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
-* This will require that the user have iOS version 10.0 or greater.
+* This is an [Apple Xcode](https://developer.apple.com/xcode/) project, using [Swift](https://developer.apple.com/swift/) language, version 5. It requires Xcode Version 10, at minimum.
+* The project requires [the BMLTiOSLib iOS Framework](https://bmlt.app/specific-topics/bmltioslib/).
+* This will require that the user have iOS version 11.0 or greater.
 
 ### License ###
 
@@ -29,7 +30,15 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 
 ## CHANGELIST ##
 
-***Version 1.1.3.1000* ** *- TBD*
+***Version 1.2.0.1000* ** *- TBD*
+
+- Switched the BMLTiOSLib to use Carthage.
+- Updated to latest Swift and Xcode versions.
+- The project now requires iOS 11.
+- Updated to the latest version of Swift.
+- Removed the Swipeable Tab Bar Controller. It broked the latest release, and, quite frankly, wasn't worth it.
+- Improved the appearance of the launch screen.
+- Improved the behavior of the layout on X-phones.
 
 ***Version 1.1.2.2002* ** *- December 28, 2018*
 

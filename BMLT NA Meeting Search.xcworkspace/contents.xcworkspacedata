@@ -8,7 +8,10 @@
       location = "group:LICENSE.txt">
    </FileRef>
    <FileRef
-      location = "group:Podfile">
+      location = "group:Cartfile">
+   </FileRef>
+   <FileRef
+      location = "group:jazzy.sh">
    </FileRef>
    <FileRef
       location = "group:BMLT NA Meeting Search.xcodeproj">

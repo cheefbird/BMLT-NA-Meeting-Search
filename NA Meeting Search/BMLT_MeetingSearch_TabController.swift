@@ -18,13 +18,12 @@
 //  along with this code.  If not, see <http://www.gnu.org/licenses/>.
 
 import UIKit
-import SwipeableTabBarController
 
 /* ###################################################################################################################################### */
 /**
  This class manages the "first tier" Tab Controller instance.
  */
-class BMLT_MeetingSearch_TabController: SwipeableTabBarController {
+class BMLT_MeetingSearch_TabController: UITabBarController {
     // MARK: - Instance Properties
     /* ################################################################################################################################## */
     /* ################################################################## */
@@ -46,7 +45,6 @@ class BMLT_MeetingSearch_TabController: SwipeableTabBarController {
         super.viewDidLoad()
         self.tabBar.unselectedItemTintColor = self.tabBar.tintColor.withAlphaComponent(0.5)
         
-        self.isSwipeEnabled = false // We disable the swipe, because we'll be providing our own.
         if let controllers = self.viewControllers {
             for theController in controllers {
                 theController.tabBarItem.title = theController.tabBarItem.title?.localizedVariant

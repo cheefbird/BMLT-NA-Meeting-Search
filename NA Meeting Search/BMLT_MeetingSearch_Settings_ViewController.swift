@@ -26,26 +26,40 @@ import UIKit
 class BMLT_MeetingSearch_Settings_ViewController: BMLT_MeetingSearch_RootViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     // MARK: Private Constant Properties
     /* ##################################################################################################################################*/
+    /// These are the densities that we display as thresholds for auto-radius. They are a meeting result count.
     private let _densityValues: [Int] = [4, 7, 10, 15, 20]
+    /// This is the segue ID for the "More Info" screen.
     private let _moreInfoSegueID = "show-info-screen-segue-id"
+    /// This is a threshold for hiding some items in the More Info screen (useful for narrow landscape screens).
     private let _moreInfoHidesHeightThreshold: CGFloat = 500
 
     // MARK: IB Properties
     /* ##################################################################################################################################*/
+    /// The label for the Auto Distance Density switch
     @IBOutlet weak var autoDistanceLabel: UILabel!
+    /// The switch for selecting auto density.
     @IBOutlet weak var autoDistanceSwitch: UISegmentedControl!
+    /// The container for the "Use Google Maps for Directions" items. It is hidden if the Google Maps app is not available.
     @IBOutlet weak var googleMapsItemsContainerView: UIView!
+    /// the switch to use Google Maps.
     @IBOutlet weak var useGoogleMapsSwitch: UISwitch!
+    /// the label for the Use Google Maps switch.
     @IBOutlet weak var useGoogleMapsSwitchLabel: UILabel!
+    /// The top contraint for the Grace period Picker View.
     @IBOutlet weak var gracePeriodTopConstraint: NSLayoutConstraint!
+    /// The label for the Grace Period Picker View.
     @IBOutlet weak var gracePeriodTopLabel: UILabel!
+    /// The initial text for the Grace Period.
     @IBOutlet weak var initialGracePeriodText: UILabel!
     /** This is the picker view for selecting a Grace Time. */
     @IBOutlet weak var graceTimePicker: UIPickerView!
     /** This is the main explanation text item. */
     @IBOutlet weak var explainText: UITextView!
+    /// The "blurb" button for corporate ID.
     @IBOutlet weak var magshareBlurbButton: UIButton!
+    /// the More info (Beanie) button.
     @IBOutlet weak var moreInfoButton: UIButton!
+    /// The container view for the More Info button (to assure centering).
     @IBOutlet weak var moreInfoContainerView: UIView!
     
     // MARK: Private Instance Methods

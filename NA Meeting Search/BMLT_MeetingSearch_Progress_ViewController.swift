@@ -26,6 +26,7 @@ import BMLTiOSLib
  This class is the one that controls the "Doing A Search" screen.
  */
 class BMLT_MeetingSearch_Progress_ViewController: BMLT_MeetingSearch_Subsequent_ViewController, CLLocationManagerDelegate {
+    /// The segue ID we use to bring in the results, when we are done.
     private let _segueID = "show-search-results-seque-id"
     
     // MARK: - Private Instance Properties

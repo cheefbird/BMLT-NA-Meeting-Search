@@ -82,8 +82,16 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
      */
     @IBOutlet weak var directionsButton: UIBarButtonItem!
     
+    /* ################################################################## */
+    /**
+     This is the button to show the route in the map.
+     */
     @IBOutlet weak var routeButton: UIBarButtonItem!
-    /** This is displayed while the directions are being looked up. */
+    
+    /* ################################################################## */
+    /**
+     This is displayed while the directions are being looked up.
+     */
     @IBOutlet weak var busyView: UIView!
 
     // MARK: Instance Properties
@@ -100,6 +108,10 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
      */
     var meetingData: BMLTiOSLibMeetingNode! = nil
     
+    /* ################################################################## */
+    /**
+     This is our map annotation.
+     */
     var mapAnnotation: BMLT_MeetingSearch_Annotation! = nil
     
     // MARK: Instance Calculated Properties
@@ -170,7 +182,7 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
         #endif
         
         if let openLink = URL(string: directionsURI) {
-            UIApplication.shared.open(openLink, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
+            UIApplication.shared.open(openLink, options: [:], completionHandler: nil)
         }
     }
 
@@ -424,10 +436,4 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
     func mapView(_ mapView: MKMapView, annotationView: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         self.directionsButtonHit(nil)
     }
-
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-private func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
-	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

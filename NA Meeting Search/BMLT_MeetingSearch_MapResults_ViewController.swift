@@ -26,8 +26,11 @@ import MapKit
  This is the "Map Results" root view controller.
  */
 class BMLT_MeetingSearch_MapResults_ViewController: BMLT_MeetingSearch_Results_Base_ViewController, MKMapViewDelegate {
+    /// The segue ID for brininging in a list view for an aggregate marker (red).
     private let _showMeetingListSegueID = "show-breakout-list-segue-id"
+    /// The segue ID for bringing in a details page for a single meeting (blue marker).
     private let _showMeetingDetailsSegueID = "show-breakout-details-segue-id"
+    /// An ID for the popover view controller for aggregate lists.
     private let _presentListPopoverID = "present-list-controller-id"
     
     /* ################################################################## */

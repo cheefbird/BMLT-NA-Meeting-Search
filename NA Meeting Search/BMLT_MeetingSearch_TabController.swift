@@ -30,9 +30,13 @@ class BMLT_MeetingSearch_TabController: UITabBarController {
     /**
      These are direct links to our controllers.
      */
+    /// The first tab (Meetings Today)
     var todayController: BMLT_MeetingSearch_Today_ViewController! = nil
+    /// The second tab (Basic search)
     var basicSearchController: BMLT_MeetingSearch_Basic_ViewController! = nil
+    /// The third tab (Location Search)
     var advancedSearchController: BMLT_MeetingSearch_Location_Search_ViewController! = nil
+    /// The fourth tab (Settings and Info)
     var settingsViewController: BMLT_MeetingSearch_Settings_ViewController! = nil
 
     // MARK: - Base Class Override Methods

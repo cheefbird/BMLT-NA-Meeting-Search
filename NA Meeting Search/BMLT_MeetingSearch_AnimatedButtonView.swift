@@ -27,6 +27,7 @@ import UIKit
  It can be initialized in Interface Builder with a frame prefix (we add a no-leading-zero integer between 0 and 99), and an initial index.
  */
 @IBDesignable final class BMLT_MeetingSearch_AnimatedButtonView: UIButton {
+    /// This is the time interval between animation steps, in seconds.
     private let _timerIntervalInSeconds: TimeInterval = 0.05
     
     // MARK: Private Properties

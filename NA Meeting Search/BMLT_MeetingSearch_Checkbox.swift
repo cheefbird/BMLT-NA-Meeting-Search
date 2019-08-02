@@ -27,7 +27,7 @@ import UIKit
 @IBDesignable class BMLT_MeetingSearch_Checkbox: UIButton {
     /** This holds the actual checked condition. If true, then the control is checked. This should not be accessed outside the class. */
     @IBInspectable var checkedInternal: Bool = false
-    /* This is a functional interface to ensure that the control gets redrawn when the state changes. */
+    /** This is a functional interface to ensure that the control gets redrawn when the state changes. */
     var checked: Bool {
         get {
             return self.checkedInternal

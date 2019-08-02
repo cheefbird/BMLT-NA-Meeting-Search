@@ -25,6 +25,7 @@ import BMLTiOSLib
  This is the "List Results" root view controller.
  */
 @IBDesignable class BMLT_MeetingSearch_ListResults_ViewController: BMLT_MeetingSearch_Results_Base_ViewController, UITableViewDataSource, UITableViewDelegate {
+    /// The ID of the segue to go into detail about the meeting.
     private let _segueID = "meeting-detail-from-list-segue-id"
     
     /* ################################################################## */
@@ -39,8 +40,22 @@ import BMLTiOSLib
      */
     @IBInspectable var alternateGradientBottomColor: UIColor = UIColor.darkGray
     
+    /* ################################################################## */
+    /**
+     This is the table view for the search results.
+     */
     @IBOutlet weak var searchResultsTableView: UITableView!
+    
+    /* ################################################################## */
+    /**
+     This is the segmented switch, displayed as a header, that we use for selecting sort.
+     */
     @IBOutlet weak var sortSegmentedSwitch: UISegmentedControl!
+    
+    /* ################################################################## */
+    /**
+     This is the constraint for the table. We change this if we did not come from a location (and hide the header switch, as there is only one sort).
+     */
     @IBOutlet weak var tableConstraint: NSLayoutConstraint!
     
     /* ################################################################## */
@@ -301,6 +316,8 @@ import BMLTiOSLib
 /**
  */
 class BMLT_MeetingSearch_Results_TableCellView: UIView {
+    /// This is the description text
     @IBOutlet weak var meetingDescriptionTextView: UITextView!
+    /// This is the label that shows the distance from the search location (if any).
     @IBOutlet weak var distanceLabel: UILabel!
 }

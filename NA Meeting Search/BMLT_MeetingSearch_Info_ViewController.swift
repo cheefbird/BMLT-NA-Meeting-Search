@@ -26,9 +26,13 @@ import UIKit
 class BMLT_MeetingSearch_Info_ViewController: BMLT_MeetingSearch_Subsequent_ViewController {
     // MARK: IB Properties
     /* ##################################################################################################################################*/
+    /// This is the label for the screen header.
     @IBOutlet weak var headerLabel: UILabel!
+    /// This is the button that displays the documentation page URI
     @IBOutlet weak var uriButton: UIButton!
+    /// This is the scrollable text field, containing the bulk of the text.
     @IBOutlet weak var explanationText: UITextView!
+    /// This is the button at the bottom of the screen, with "DONE."
     @IBOutlet weak var doneButton: UIButton!
 
     // MARK: IB Methods
@@ -41,7 +45,7 @@ class BMLT_MeetingSearch_Info_ViewController: BMLT_MeetingSearch_Subsequent_View
      */
     @IBAction func beanieButtonHit(_ : Any) {
         let openLink = NSURL(string: "INFO-HELP-URI".localizedVariant)
-        UIApplication.shared.open(openLink! as URL, options: convertToUIApplicationOpenExternalURLOptionsKeyDictionary([:]), completionHandler: nil)
+        UIApplication.shared.open(openLink! as URL, options: [:], completionHandler: nil)
     }
     
     /* ################################################################## */
@@ -84,9 +88,4 @@ class BMLT_MeetingSearch_Info_ViewController: BMLT_MeetingSearch_Subsequent_View
             }
         }
     }
-}
-
-// Helper function inserted by Swift 4.2 migrator.
-private func convertToUIApplicationOpenExternalURLOptionsKeyDictionary(_ input: [String: Any]) -> [UIApplication.OpenExternalURLOptionsKey: Any] {
-	return Dictionary(uniqueKeysWithValues: input.map { key, value in (UIApplication.OpenExternalURLOptionsKey(rawValue: key), value)})
 }

@@ -27,8 +27,22 @@ import MapKit
 class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_RootViewController, UITextFieldDelegate, MKMapViewDelegate, CLLocationManagerDelegate {
     // MARK: - Private Instance Properties
     /* ##################################################################################################################################*/
+    /* ################################################################## */
+    /**
+        This is the segue ID for starting the search, and bringing in the progress screen.
+     */
     private let _mainSearchSegueID: String = "perform-location-meetings-in-range-search-segue-id"
+    
+    /* ################################################################## */
+    /**
+     This is the opacity of the busy overlay.
+     */
     private let _overlayOpacity: CGFloat = 0.15
+    
+    /* ################################################################## */
+    /**
+        This is our initial zoom level.
+     */
     private let _initialZoom = 0.35
     
     /* ################################################################## */
@@ -51,26 +65,44 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
 
     // MARK: - IB Instance Properties
     /* ##################################################################################################################################*/
+    /// Label for "Find Meetings Within"
     @IBOutlet weak var findMeetingsWithinLabel: UILabel!
+    /// The text field for entering distance.
     @IBOutlet weak var distanceTextField: UITextField!
+    /// The text field, denoting distance units.
     @IBOutlet weak var unitLabel: UILabel!
-    @IBOutlet weak var setLocationButton: UIButton!
+    /// The stepper, for the distance value.
     @IBOutlet weak var distanceValueStepper: UIStepper!
+    /// The switch for turning auto-radius mode on or off.
     @IBOutlet weak var autoSwitch: UISwitch!
+    /// The button near the top, for setting the map to the entered location.
+    @IBOutlet weak var setLocationButton: UIButton!
+    /// The button for performing the search.
     @IBOutlet weak var performBasicSearchButton: UIButton!
+    /// The label for the search string entry.
     @IBOutlet weak var stringSearchLabel: UILabel!
+    /// The text field, for the search string.
     @IBOutlet weak var stringSearchTextField: UITextField!
+    /// The map view.
     @IBOutlet weak var mapView: MKMapView!
+    /// The activity indicator, for locating the search string place.
     @IBOutlet weak var stringSearchActivityIndicator: UIActivityIndicatorView!
+    /// The segmented control at the bottom, for selecting the map type.
     @IBOutlet weak var mapTypeSegmentedControl: UISegmentedControl!
 
     // MARK: - Instance Properties
     /* ##################################################################################################################################*/
+    /// The distance, as an integer, of the radius; in whatever our distance units are.
     var distance: Int = 0
+    /// The annotation for the map marker.
     var mapAnnotation: BMLT_MeetingSearch_Annotation! = nil
+    /// A semaphore, for marking when the map has been set up.
     var initialMapSetDone: Bool = false
+    /// the current search location.
     var searchLocation: CLLocationCoordinate2D! = nil
+    /// The string to use for looking up a location.
     var searchString: String = ""
+    /// The overlay for the radius when in non-auto mode.
     var distanceOverlay: MKCircle! = nil
 
     // MARK: - IB Action Methods

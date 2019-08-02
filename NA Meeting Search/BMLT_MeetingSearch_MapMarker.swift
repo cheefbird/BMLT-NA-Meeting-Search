@@ -25,6 +25,7 @@
 import MapKit
 import BMLTiOSLib
 
+/// A typealias for an Array of meetings.
 typealias BMLT_MeetingSearch_MapMarker_MeetingArray = [BMLTiOSLibMeetingNode]
 
 // MARK: - Annotation Class -
@@ -33,7 +34,9 @@ typealias BMLT_MeetingSearch_MapMarker_MeetingArray = [BMLTiOSLibMeetingNode]
  This handles the marker annotation.
  */
 class BMLT_MeetingSearch_Annotation: NSObject, MKAnnotation, NSCoding {
+    /// The Dictionary key for the coordinate object.
     let sCoordinateObjectKey: String = "MapAnnotation_Coordinate"
+    /// The Dictionary key for the meeting instance.
     let sMeetingsObjectKey: String = "MapAnnotation_Meetings"
     
     /** This title is displayed in callouts. */
@@ -115,12 +118,16 @@ class BMLT_MeetingSearch_Annotation: NSObject, MKAnnotation, NSCoding {
 class BMLT_MeetingSearch_MapMarkerAnnotationView: MKAnnotationView {
     // MARK: - Constant Properties -
     /* ################################################################################################################################## */
+    /// The Dictionary key for the marker annotation.
     let sAnnotationObjectKey: String = "MapMarker_Annotation"
     
     // MARK: - Private Properties -
     /* ################################################################################################################################## */
+    /// the current animation frame index.
     private var _currentFrame: Int = 0
+    /// the timer for each animation step.
     private var _animationTimer: Timer! = nil
+    /// All the frames for the animation.
     private var _animationFrames: [UIImage] = []
     
     // MARK: - Computed Properties -

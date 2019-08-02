@@ -32,7 +32,9 @@ class BMLT_MeetingSearch_ResultsTabControllerViewController: UITabBarController 
     /**
      These are direct links to our controllers.
      */
+    /// The list view View Controller
     var listViewController: BMLT_MeetingSearch_ListResults_ViewController! = nil
+    /// The map view View Controller
     var mapViewController: BMLT_MeetingSearch_MapResults_ViewController! = nil
     
     /* ################################################################## */

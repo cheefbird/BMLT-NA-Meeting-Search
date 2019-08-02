@@ -215,6 +215,7 @@ class BMLT_MeetingSearch_MapResults_PageRenderer: BMLT_MeetingSearch_ListResults
  This extends the list formatter for a single page, with a single meetings and a map.
  */
 class BMLT_MeetingSearch_SingleMeeting_PageRenderer: BMLT_MeetingSearch_ListResults_PageRenderer {
+    /// This is the formatter object we'll use to render the page.
     var mapFormatter: UIViewPrintFormatter! = nil
     
     // MARK: - Base Class Override Calculated Instance Properties

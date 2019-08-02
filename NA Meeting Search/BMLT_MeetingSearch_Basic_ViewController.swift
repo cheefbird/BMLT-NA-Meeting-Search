@@ -29,28 +29,51 @@ class BMLT_MeetingSearch_Basic_ViewController: BMLT_MeetingSearch_RootViewContro
     private let _mainSearchSegueID: String = "perform-basic-meetings-in-range-search-segue-id"
 
     /** These are our various IB items. */
+    /// The label for the "Find Meetings Within" Text Field.
     @IBOutlet weak var findMeetingsWithinLabel: UILabel!
+    /// Text Field to Enter Distance.
     @IBOutlet weak var distanceTextField: UITextField!
+    /// The label, denoting the distance units.
     @IBOutlet weak var unitLabel: UILabel!
+    /// The up/down stepper to increment/decrement the distance value.
     @IBOutlet weak var distanceValueStepper: UIStepper!
+    /// The label for the string search.
     @IBOutlet weak var stringSearchLabel: UILabel!
+    /// The field to enter the string.
     @IBOutlet weak var stringSearchTextField: UITextField!
+    /// The SEARCH button.
     @IBOutlet weak var performBasicSearchButton: UIButton!
+    /// Sunday (or whatever the first weekday is)
     @IBOutlet weak var weekdayCheckbox01: BMLT_MeetingSearch_Checkbox!
+    /// Monday (or the next weekday, and so on)
     @IBOutlet weak var weekdayCheckbox02: BMLT_MeetingSearch_Checkbox!
+    /// Tuesday
     @IBOutlet weak var weekdayCheckbox03: BMLT_MeetingSearch_Checkbox!
+    /// Wednesday
     @IBOutlet weak var weekdayCheckbox04: BMLT_MeetingSearch_Checkbox!
+    /// Thursday
     @IBOutlet weak var weekdayCheckbox05: BMLT_MeetingSearch_Checkbox!
+    /// Friday
     @IBOutlet weak var weekdayCheckbox06: BMLT_MeetingSearch_Checkbox!
+    /// Saturday
     @IBOutlet weak var weekdayCheckbox07: BMLT_MeetingSearch_Checkbox!
+    /// Label for the first weekday (Sunday, maybe)
     @IBOutlet weak var weekdayLabel01: UILabel!
+    /// label for Monday
     @IBOutlet weak var weekdayLabel02: UILabel!
+    /// Label for Tuesday
     @IBOutlet weak var weekdayLabel03: UILabel!
+    /// Label for Wednesday
     @IBOutlet weak var weekdayLabel04: UILabel!
+    /// Label for Thursday
     @IBOutlet weak var weekdayLabel05: UILabel!
+    /// Label for Friday
     @IBOutlet weak var weekdayLabel06: UILabel!
+    /// Label for Saturday
     @IBOutlet weak var weekdayLabel07: UILabel!
+    /// The button above the checkboxes to check all or uncheck all
     @IBOutlet weak var checkUncheckButton: UIButton!
+    /// The switch for auto-radius
     @IBOutlet weak var autoSwitch: UISwitch!
     
     /** This is the current distance the user has selected. */

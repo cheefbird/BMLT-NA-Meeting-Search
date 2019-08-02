@@ -39,6 +39,7 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 - Removed the Swipeable Tab Bar Controller. It broked the latest release, and, quite frankly, wasn't worth it.
 - Improved the appearance of the launch screen.
 - Improved the behavior of the layout on X-phones.
+- Improved documentation for 100% Jazzy docs.
 
 ***Version 1.1.2.2002* ** *- December 28, 2018*
 

@@ -1,5 +1,7 @@
 ![BMLTiOSLib Icon](https://bmlt.app/wp-content/uploads/2017/01/BMLTLogo.png)
 
+*[This document, as a GitHub Pages Site](https://bmlt-enabled.github.io/BMLTiOSLib/)*
+
 # BMLTiOSLib
 
 **NOTE:** A detailed, example-rich technical discussion of this library [is available on this Web site](https://bmlt.app/specific-topics/bmltioslib/).
@@ -8,13 +10,33 @@ The BMLTiOSLib fits between [the BMLT Root Server's Semantic Interface](https://
 
 ![Chart, Showing Where the BMLTiOSLib Fits](https://bmlt.app/wp-content/uploads/2017/01/BMLTiOSLibSetup.png)
 
-[This document, as a GitHup Pages Site](https://bmlt-enabled.github.io/BMLTiOSLib/)
-
 This project is an [iOS Shared Framework](https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/BPFrameworks/Tasks/CreatingFrameworks.html), designed to ease integration of a BMLT Root Server into an iOS client (it may also work for MacOS, but we're not there yet). The BMLTiOSLib is a Swift-only framework. It won't support Objective-C. The [BMLTiOSLib/Framework](https://github.com/bmlt-enabled/BMLTiOSLib/tree/master/BMLTiOSLib/Framework%20Project) directory has the relevant exported classes. The [BMLTiOSLib/Test Harness Project](https://github.com/bmlt-enabled/BMLTiOSLib/tree/master/BMLTiOSLib/Test%20Harness%20Project) directory implements a fairly complex program that we've written to exercise the library. Because [Apple now requires that iOS apps only interact with SSL servers](https://techcrunch.com/2016/06/14/apple-will-require-https-connections-for-ios-apps-by-the-end-of-2016/), it's a bit complex to test. We don't want to compromise security by allowing connections to self-signed certs, so we can't test with localhost.
 
 **PROTIP:** We use [Charles Proxy](https://www.charlesproxy.com) to examine the interaction between the simulator and the server. [It is possible to set up Charles as a "man in the middle" to decrypt SSL interactions.](https://www.charlesproxy.com/documentation/proxying/ssl-proxying/)
 
-For easy testing, you can connect to [the BMLT Test Server](https://bmltserver.org/main_server), which uses SSL. This database may change a lot, as it is our main test bed, but it will always have the ability to be accessed via SSL. [The BMLTiOSLib Tester app](https://github.com/bmlt-enabled/BMLTiOSLib/tree/master/BMLTiOSLib/Test%20Harness%20Project) is not pretty. It's not meant to be. It's a space shuttle cockpit program that's designed to let us press all the various buttons. It also has a couple of issues with operation that, quite frankly, aren't a priority to fix, as [we now have several "real world" implementations](https://bmlt.app/satellites/bmlt-ios-apps/) that stress the BMLTiOSLib a great deal more than this ugly little duckling. [This is the documentation page for the BMLTiOSLib.](https://bmlt.app/bmltioslib/)
+For easy testing, you can connect to [the BMLT Test Server](https://latest.aws.bmlt.app/main_server/), which uses SSL. This database may change a lot, as it is our main test bed, but it will always have the ability to be accessed via SSL. [The BMLTiOSLib Tester app](https://github.com/bmlt-enabled/BMLTiOSLib/tree/master/BMLTiOSLib/Test%20Harness%20Project) is not pretty. It's not meant to be. It's a space shuttle cockpit program that's designed to let us press all the various buttons. It also has a couple of issues with operation that, quite frankly, aren't a priority to fix, as [we now have several "real world" implementations](https://bmlt.app/satellites/bmlt-ios-apps/) that stress the BMLTiOSLib a great deal more than this ugly little duckling. [This is the documentation page for the BMLTiOSLib.](https://bmlt.app/bmltioslib/)
+
+## INSTALLATION
+
+### As A [CocoaPod](https://cocoapods.org):
+
+To use this as a [CocoaPod](https://cocoapods.org), simply add the following to your [podfile](https://guides.cocoapods.org/using/the-podfile.html):
+
+    pod 'BMLTiOSLib'
+
+You then `cd` to the project directory, and execute `pod install` or `pod update` on the command line.
+
+### Using [Carthage](https://github.com/Carthage/Carthage):
+
+To use this from [Carthage](https://github.com/Carthage/Carthage), simply add the following to your [Cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile):
+
+    github "bmlt-enabled/BMLTiOSLib"
+
+You then `cd` to the project directory, and execute `carthage update` on the command line.
+
+### Directly:
+
+You can also directly access this project from its [location as a GitHub repo](https://github.com/bmlt-enabled/BMLTiOSLib), and include it into your project.
 
 ## UNDER THE HOOD
 

@@ -40,6 +40,7 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 - Improved the appearance of the launch screen.
 - Improved the behavior of the layout on X-phones.
 - Improved documentation for 100% Jazzy docs.
+- Switched to the MIT License.
 
 ***Version 1.1.2.2002* ** *- December 28, 2018*
 

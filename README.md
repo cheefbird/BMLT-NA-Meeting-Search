@@ -30,7 +30,7 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 
 ## CHANGELIST ##
 
-***Version 1.2.0.1000* ** *- TBD*
+***Version 1.2.0.2000* ** *- August 24, 2019*
 
 - Switched the BMLTiOSLib to use Carthage.
 - Updated to latest Swift and Xcode versions.

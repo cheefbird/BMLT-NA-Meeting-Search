@@ -124,9 +124,11 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
      - parameter sender: The segmented control that triggered this.
      */
     @IBAction func mapTypeControlChanged(_ sender: UISegmentedControl) {
+        self.removeDistanceOverlay()
         let mapTypeIndex = sender.selectedSegmentIndex
         self.prefs.mapTypeIndex = mapTypeIndex
         self.mapView.mapType = (0 == mapTypeIndex) ? .standard : ((1 == mapTypeIndex) ? .hybrid : .satellite)
+        self.addDistanceOverlay()
     }
 
     /* ################################################################## */

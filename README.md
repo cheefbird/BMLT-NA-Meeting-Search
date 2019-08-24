@@ -41,6 +41,7 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 - Improved the behavior of the layout on X-phones.
 - Improved documentation for 100% Jazzy docs.
 - Switched to the MIT License.
+- Fixed a small bug, where changing the map type while the "AUTO" switch was off (distance circle overlay shown) would not be redrawn after changing the map type.
 
 ***Version 1.1.2.2002* ** *- December 28, 2018*
 

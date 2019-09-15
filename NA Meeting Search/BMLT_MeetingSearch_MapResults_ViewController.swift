@@ -111,6 +111,13 @@ class BMLT_MeetingSearch_MapResults_ViewController: BMLT_MeetingSearch_Results_B
 
         // We do this in order to prevent the background tap recognizer from interfering with the map.
         self.tappedInBackgroundGestureRecognizer.cancelsTouchesInView = false
+        
+        if #available(iOS 13.0, *) {
+            if let tintColor = self.view.tintColor {
+                self.mapTypeSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: tintColor], for: .normal)
+                self.mapTypeSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+            }
+        }
     }
     
     /* ################################################################## */

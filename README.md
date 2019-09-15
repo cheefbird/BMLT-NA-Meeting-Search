@@ -30,6 +30,12 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 
 ## CHANGELIST ##
 
+***Version 1.2.0.3000* ** *- September 15, 2019*
+
+- Minor internal "code smell" fix.
+- Made a few special cases for iOS 13, where the segmented switches needed some styling.
+- App Store release candidate.
+
 ***Version 1.2.0.2000* ** *- August 24, 2019*
 
 - Switched the BMLTiOSLib to use Carthage.

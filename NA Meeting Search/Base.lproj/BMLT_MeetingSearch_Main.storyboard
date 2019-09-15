@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -271,11 +269,11 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" maximumValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="Bwn-4l-LQs">
-                                                <rect key="frame" x="245" y="0.0" width="94" height="29"/>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <rect key="frame" x="245" y="0.0" width="94" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="94" id="YgH-Oe-IyZ"/>
                                                 </constraints>
+                                                <color key="tintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <action selector="stepperHit:" destination="zmI-ly-Q2D" eventType="valueChanged" id="BnJ-7v-uRW"/>
                                                     <action selector="stepperHit:" destination="5ee-KX-aNo" eventType="valueChanged" id="K8A-oP-Lj2"/>
@@ -297,7 +295,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="yRi-pt-cUf"/>
                                                 </constraints>
-                                                <color key="textColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -386,6 +384,7 @@
                                     <segment title="ADDRESS-AND-DIRECTIONS-MAP-TYPE-SATELLITE"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="selectedSegmentTintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="mapTypeControlChanged:" destination="zmI-ly-Q2D" eventType="valueChanged" id="0Sr-VE-CLx"/>
                                 </connections>
@@ -403,6 +402,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="BGq-lk-8gF" firstAttribute="leading" secondItem="UL2-yi-euJ" secondAttribute="leading" id="32i-h2-vEf"/>
                             <constraint firstItem="gSm-Mf-KpZ" firstAttribute="top" secondItem="UL2-yi-euJ" secondAttribute="top" id="4A3-3n-vZv"/>
@@ -501,6 +501,7 @@
                                     <segment title="SETTINGS-DENSITY-MORE-SWITCH"/>
                                     <segment title="SETTINGS-DENSITY-MAX-SWITCH"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="autoDistanceSwitchChanged:" destination="AAR-Ez-bjW" eventType="valueChanged" id="LtK-oY-9xx"/>
                                 </connections>
@@ -691,11 +692,11 @@
             <objects>
                 <viewController modalTransitionStyle="partialCurl" id="Rcp-5Y-JbP" customClass="BMLT_MeetingSearch_Info_ViewController" customModule="BMLT_NA_Meeting_Search" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oAn-GX-j96">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INFO-VERSION-FORMAT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="HaP-DV-2HL">
-                                <rect key="frame" x="16" y="44" width="382" height="30"/>
+                                <rect key="frame" x="16" y="0.0" width="382" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="rtY-Kw-f40"/>
                                 </constraints>
@@ -704,7 +705,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5I-oc-LVm">
-                                <rect key="frame" x="8" y="818" width="398" height="36"/>
+                                <rect key="frame" x="8" y="764" width="398" height="36"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="tintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -716,7 +717,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeZ-xo-L6M">
-                                <rect key="frame" x="175" y="78" width="64" height="64"/>
+                                <rect key="frame" x="175" y="34" width="64" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="Zhg-jC-FsI"/>
@@ -729,7 +730,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" editable="NO" text="INFO-EXPLAIN-TEXT" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qCO-XS-yZf">
-                                <rect key="frame" x="16" y="180" width="382" height="638"/>
+                                <rect key="frame" x="16" y="136" width="382" height="628"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -737,7 +738,7 @@
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQh-cf-cTs">
-                                <rect key="frame" x="16" y="146" width="382" height="30"/>
+                                <rect key="frame" x="16" y="102" width="382" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Yy9-ua-WUN"/>
                                 </constraints>
@@ -1141,7 +1142,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" maximumValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="6IN-64-ZSb">
-                                                <rect key="frame" x="227" y="0.0" width="94" height="29"/>
+                                                <rect key="frame" x="227" y="0.0" width="94" height="30"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="94" id="c8d-tZ-w7Y"/>
@@ -1166,7 +1167,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="fwo-3b-1hQ"/>
                                                 </constraints>
-                                                <color key="textColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="go" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                                 <connections>
@@ -1245,6 +1246,7 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mtO-NL-jNj" firstAttribute="bottom" secondItem="64y-uS-rUd" secondAttribute="bottom" id="6kM-vl-zQQ"/>
                             <constraint firstItem="mtO-NL-jNj" firstAttribute="centerX" secondItem="64y-uS-rUd" secondAttribute="centerX" id="6lE-o1-s6R"/>
@@ -1299,11 +1301,11 @@
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" id="ELc-mW-9iz" customClass="BMLT_MeetingSearch_MapResults_ViewController" customModule="BMLT_NA_Meeting_Search" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dxq-jM-wOE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww9-1j-BOV">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Dxb-XO-jEh"/>
@@ -1326,14 +1328,15 @@
                                 </items>
                             </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5K-Lz-p4J">
-                                <rect key="frame" x="0.0" y="88" width="414" height="705"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="695"/>
                                 <color key="tintColor" red="0.5" green="0.29230378099999998" blue="0.79606584820000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <outlet property="delegate" destination="ELc-mW-9iz" id="rHt-q2-Ht8"/>
                                 </connections>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GJh-f4-YwC">
-                                <rect key="frame" x="-4" y="793" width="422" height="21"/>
+                                <rect key="frame" x="-4" y="739" width="422" height="21"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="3Sp-uN-oEC"/>
                                 </constraints>
@@ -1343,6 +1346,7 @@
                                     <segment title="ADDRESS-AND-DIRECTIONS-MAP-TYPE-SATELLITE"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="selectedSegmentTintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="mapTypeControlChanged:" destination="aHK-HH-qxW" eventType="valueChanged" id="9Jo-Ow-bSq"/>
                                     <action selector="mapTypeControlChanged:" destination="ELc-mW-9iz" eventType="valueChanged" id="XVx-Se-H1T"/>
@@ -1392,11 +1396,11 @@
             <objects>
                 <viewController storyboardIdentifier="present-list-controller-id" modalTransitionStyle="flipHorizontal" id="4iN-Cq-mnj" customClass="BMLT_MeetingSearch_ListResults_ViewController" customModule="BMLT_NA_Meeting_Search" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Krq-0P-CEX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfq-Vf-mCu">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="ppS-qr-9Bg"/>
@@ -1419,7 +1423,7 @@
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MgT-Bk-sws">
-                                <rect key="frame" x="0.0" y="112" width="414" height="701"/>
+                                <rect key="frame" x="0.0" y="68" width="414" height="740"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="separatorColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -1430,8 +1434,7 @@
                                 </connections>
                             </tableView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Z5r-zs-6Mc">
-                                <rect key="frame" x="0.0" y="88" width="414" height="25"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="aKH-Id-hhp"/>
                                 </constraints>
@@ -1440,6 +1443,7 @@
                                     <segment title="SORTBYDISTANCE"/>
                                 </segments>
                                 <color key="tintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="selectedSegmentTintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="sortChanged:" destination="4iN-Cq-mnj" eventType="valueChanged" id="H7D-R5-DaR"/>
                                 </connections>
@@ -1478,6 +1482,7 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="doneBarButton" destination="xmk-Ov-4HE" id="9tp-ki-Ddk"/>
                         <outlet property="myNavigationBar" destination="mfq-Vf-mCu" id="wUg-Gg-U9e"/>
                         <outlet property="searchResultsTableView" destination="MgT-Bk-sws" id="6E0-z4-pS3"/>
                         <outlet property="sortSegmentedSwitch" destination="Z5r-zs-6Mc" id="OIC-v7-bdy"/>
@@ -1495,11 +1500,11 @@
             <objects>
                 <viewController modalTransitionStyle="flipHorizontal" id="G8m-hh-bhd" userLabel="Meeting Search In Progress" customClass="BMLT_MeetingSearch_Progress_ViewController" customModule="BMLT_NA_Meeting_Search" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K2c-w9-Auh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s7r-cL-Fw5" customClass="BMLT_MeetingSearch_AnimatedButtonView" customModule="BMLT_NA_Meeting_Search" customModuleProvider="target">
-                                <rect key="frame" x="87" y="328" width="240" height="240"/>
+                                <rect key="frame" x="87" y="301" width="240" height="240"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="MVN-VA-7Qn"/>
@@ -1575,11 +1580,11 @@
                         <viewControllerLayoutGuide type="bottom" id="W4i-ig-H0r"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GWQ-C2-5eY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnh-lt-cIE">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="pwO-Dj-Nbc"/>
@@ -1616,7 +1621,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="FMG-qg-l4d">
-                                <rect key="frame" x="20" y="109" width="374" height="18"/>
+                                <rect key="frame" x="20" y="65" width="374" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="18" id="bfC-JU-jMY"/>
                                 </constraints>
@@ -1625,7 +1630,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="v3l-Cu-n5E">
-                                <rect key="frame" x="20" y="127" width="374" height="72"/>
+                                <rect key="frame" x="20" y="83" width="374" height="72"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="72" id="E4q-TM-bTi"/>
@@ -1636,7 +1641,7 @@
                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                             </textView>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zac-r2-BvU">
-                                <rect key="frame" x="0.0" y="265" width="414" height="577"/>
+                                <rect key="frame" x="0.0" y="221" width="414" height="567"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" red="0.5" green="0.29230378099999998" blue="0.79606584820000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
@@ -1644,7 +1649,7 @@
                                 </connections>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EnC-Ic-taa">
-                                <rect key="frame" x="-4" y="842" width="422" height="21"/>
+                                <rect key="frame" x="-4" y="788" width="422" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="y7l-qP-oG7"/>
                                 </constraints>
@@ -1653,12 +1658,13 @@
                                     <segment title="ADDRESS-AND-DIRECTIONS-MAP-TYPE-HYBRID"/>
                                     <segment title="ADDRESS-AND-DIRECTIONS-MAP-TYPE-SATELLITE"/>
                                 </segments>
+                                <color key="selectedSegmentTintColor" red="1" green="1" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="mapTypeControlChanged:" destination="aHK-HH-qxW" eventType="valueChanged" id="LZc-qE-3Wk"/>
                                 </connections>
                             </segmentedControl>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vYY-YA-WEv">
-                                <rect key="frame" x="20" y="199" width="374" height="64"/>
+                                <rect key="frame" x="20" y="155" width="374" height="64"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="W6Z-a9-coP"/>
@@ -1668,7 +1674,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-wD-7Un">
-                                <rect key="frame" x="0.0" y="88" width="414" height="21"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="v9k-PH-KYI"/>
                                 </constraints>
@@ -1677,10 +1683,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0fD-Gv-soh" userLabel="busyView">
-                                <rect key="frame" x="0.0" y="88" width="414" height="754"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="744"/>
                                 <subviews>
                                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gNG-tM-wIl">
-                                        <rect key="frame" x="188.5" y="358.5" width="37" height="37"/>
+                                        <rect key="frame" x="188.5" y="353.5" width="37" height="37"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="gNG-tM-wIl" secondAttribute="height" multiplier="1:1" id="YIM-oz-12A"/>
                                             <constraint firstAttribute="width" constant="37" id="tJW-kE-jM3"/>
@@ -1742,6 +1748,7 @@
                         <outlet property="busyView" destination="0fD-Gv-soh" id="ZFt-KJ-Fal"/>
                         <outlet property="commentsTextField" destination="vYY-YA-WEv" id="5lh-aW-K2g"/>
                         <outlet property="directionsButton" destination="exq-cX-OYZ" id="Pz7-HF-ao4"/>
+                        <outlet property="doneBarButton" destination="oin-yh-MjG" id="Ff1-39-uBe"/>
                         <outlet property="locationMapView" destination="zac-r2-BvU" id="VoV-KR-hsG"/>
                         <outlet property="mapTopConstraint" destination="Gbe-hH-mTx" id="DdY-sV-gDg"/>
                         <outlet property="mapTypeSegmentedControl" destination="EnC-Ic-taa" id="2Wx-nY-2cp"/>
@@ -1758,7 +1765,7 @@
     </scenes>
     <resources>
         <image name="BMLT_MeetingSearch_AnimatedButtonView/Frame0" width="240" height="240"/>
-        <image name="Beanie" width="128" height="131"/>
+        <image name="Beanie" width="522.5" height="522.5"/>
         <image name="Gear" width="25" height="25"/>
         <image name="Globe" width="25" height="25"/>
         <image name="List" width="25" height="25"/>
@@ -1767,8 +1774,8 @@
         <image name="Today" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="jrn-qe-aVP"/>
-        <segue reference="w0u-y9-FZO"/>
-        <segue reference="zgD-rv-pTw"/>
+        <segue reference="jO7-lc-R3V"/>
+        <segue reference="UFX-k3-0jY"/>
+        <segue reference="7rw-mi-5Nv"/>
     </inferredMetricsTieBreakers>
 </document>

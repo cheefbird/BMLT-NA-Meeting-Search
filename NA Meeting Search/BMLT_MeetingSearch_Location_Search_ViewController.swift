@@ -223,6 +223,15 @@ class BMLT_MeetingSearch_Location_Search_ViewController: BMLT_MeetingSearch_Root
         self.distanceTextField.text = String(self.distance)
         self.searchLocation = nil
         self.checkSearchButtonEnabledStatus()
+        
+        if #available(iOS 13.0, *) {
+            if let tintColor = self.view.tintColor {
+                self.distanceValueStepper.tintColor = UIColor.black
+                self.distanceValueStepper.backgroundColor = tintColor
+                self.mapTypeSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: tintColor], for: .normal)
+                self.mapTypeSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+            }
+        }
     }
     
     /* ################################################################## */

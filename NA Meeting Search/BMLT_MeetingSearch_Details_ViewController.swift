@@ -104,6 +104,12 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
      */
     @IBOutlet weak var busyView: UIView!
 
+    /* ################################################################## */
+    /**
+     This is the "Done" bar button.
+     */
+    @IBOutlet weak var doneBarButton: UIBarButtonItem!
+    
     // MARK: Instance Properties
     /* ##################################################################################################################################*/
     /* ################################################################## */
@@ -384,6 +390,13 @@ class BMLT_MeetingSearch_Details_ViewController: BMLT_MeetingSearch_Subsequent_V
         
         // We do this in order to prevent the background tap recognizer from interfering with the map.
         self.tappedInBackgroundGestureRecognizer.cancelsTouchesInView = false
+        
+        if #available(iOS 13.0, *) {
+            if let tintColor = self.view.tintColor {
+                self.mapTypeSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: tintColor], for: .normal)
+                self.mapTypeSegmentedControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+            }
+        }
 
         self.setUpMap()
     }

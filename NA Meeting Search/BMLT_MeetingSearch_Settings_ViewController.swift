@@ -216,6 +216,13 @@ class BMLT_MeetingSearch_Settings_ViewController: BMLT_MeetingSearch_RootViewCon
         if let textItemText = self.explainText.text {
             self.explainText.text = textItemText.localizedVariant
         }
+        
+        if #available(iOS 13.0, *) {
+            if let tintColor = self.view.tintColor {
+                self.autoDistanceSwitch.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: tintColor], for: .normal)
+                self.autoDistanceSwitch.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+            }
+        }
     }
 
     /* ################################################################## */

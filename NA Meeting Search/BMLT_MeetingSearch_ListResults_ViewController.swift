@@ -70,6 +70,12 @@ import BMLTiOSLib
     
     /* ################################################################## */
     /**
+     This is the "Done" bar button.
+     */
+    @IBOutlet weak var doneBarButton: UIBarButtonItem!
+    
+    /* ################################################################## */
+    /**
      This is true if this was not the main list.
      */
     var pushedByMap: Bool = false
@@ -205,6 +211,13 @@ import BMLTiOSLib
             }
             self.sortSegmentedSwitch.selectedSegmentIndex = self.prefs.sortResultsByDistance ? 1 : 0
             self._sortResults(self.prefs.sortResultsByDistance)
+            // iOS 13 uses a different property to affect the tint color.
+            if #available(iOS 13.0, *) {
+                if let tintColor = self.view.tintColor {
+                    self.sortSegmentedSwitch.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: tintColor], for: .normal)
+                    self.sortSegmentedSwitch.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: .selected)
+                }
+            }
         }
         
         // We do this in order to prevent the background tap recognizer from interfering with the list.

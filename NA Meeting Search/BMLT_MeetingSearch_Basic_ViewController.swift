@@ -237,6 +237,13 @@ class BMLT_MeetingSearch_Basic_ViewController: BMLT_MeetingSearch_RootViewContro
         for weekday in 0..<7 {
             weekdayLabels[weekday].text = BMLT_MeetingSearch_Prefs.weekdayNameFromWeekdayNumber(weekday + 1, short: true)
         }
+        
+        if #available(iOS 13.0, *) {
+            if let tintColor = self.view.tintColor {
+                self.distanceValueStepper.tintColor = UIColor.black
+                self.distanceValueStepper.backgroundColor = tintColor
+            }
+        }
     }
     
     /* ################################################################## */

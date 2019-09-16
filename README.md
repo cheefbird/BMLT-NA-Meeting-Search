@@ -30,6 +30,10 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 
 ## CHANGELIST ##
 
+***Version 1.2.0.3001* ** *- September 16, 2019*
+
+- No changes. Apple wants me to resubmit with the newest RC of Xcode.
+
 ***Version 1.2.0.3000* ** *- September 15, 2019*
 
 - Minor internal "code smell" fix.

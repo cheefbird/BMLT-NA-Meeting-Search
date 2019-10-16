@@ -30,6 +30,11 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 
 ## CHANGELIST ##
 
+***Version 1.2.1.2000* ** *- October 16, 2019*
+
+- Fixed a bug, in which you could swipe through disabled screens, if the connection was invalid.
+- Changed the Root Server URI.
+
 ***Version 1.2.0.3001* ** *- September 16, 2019*
 
 - No changes. Apple wants me to resubmit with the newest RC of Xcode.

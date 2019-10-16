@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>BMLTRootServerURI</key>
-	<string>https://tomato.na-bmlt.org/main_server/</string>
+	<string>https://tomato.bmltenabled.org/main_server/</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en_US</string>
 	<key>CFBundleDocumentTypes</key>
@@ -37,7 +37,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>ITSAppUsesNonExemptEncryption</key>

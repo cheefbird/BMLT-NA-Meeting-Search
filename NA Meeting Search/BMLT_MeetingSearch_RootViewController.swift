@@ -202,8 +202,21 @@ import BMLTiOSLib
      */
     @objc func swipeRight(_ sender: UISwipeGestureRecognizer) {
         if let tabController = self.tabBarController {
-            if 0 < self.myTabBarIndex {
-                tabController.selectedViewController = tabController.viewControllers?[self.myTabBarIndex - 1]
+            var index = self.myTabBarIndex - 1
+            if 0 <= index {
+                if let viewControllers = tabController.viewControllers {
+                    for vc in viewControllers {
+                        if vc.navigationController?.tabBarItem.isEnabled ?? false {
+                            break
+                        } else {
+                            index -= 1
+                        }
+                    }
+                    
+                    if (0..<viewControllers.count).contains(index) {
+                        tabController.selectedViewController = tabController.viewControllers?[index]
+                    }
+                }
             }
         }
     }
@@ -216,8 +229,20 @@ import BMLTiOSLib
      */
     @objc func swipeLeft(_ sender: UISwipeGestureRecognizer) {
         if let tabController = self.tabBarController {
-            if (0 <= self.myTabBarIndex) && (self.myTabBarIndex < ((tabController.viewControllers?.count)! - 1)) {
-                tabController.selectedViewController = tabController.viewControllers?[self.myTabBarIndex + 1]
+            var index = self.myTabBarIndex + 1
+            if  let viewControllers = tabController.viewControllers,
+                viewControllers.count > index {
+                for vc in viewControllers {
+                    if vc.navigationController?.tabBarItem.isEnabled ?? false {
+                        break
+                    } else {
+                        index += 1
+                    }
+                }
+                    
+                if (0..<viewControllers.count).contains(index) {
+                    tabController.selectedViewController = tabController.viewControllers?[index]
+                }
             }
         }
     }

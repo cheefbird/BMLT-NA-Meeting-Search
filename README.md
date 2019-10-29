@@ -30,6 +30,10 @@ BMLT is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY
 
 ## CHANGELIST ##
 
+***Version 1.2.1.3000* ** *- October 29, 2019*
+
+- No change. Just a release.
+
 ***Version 1.2.1.2000* ** *- October 16, 2019*
 
 - Fixed a bug, in which you could swipe through disabled screens, if the connection was invalid.

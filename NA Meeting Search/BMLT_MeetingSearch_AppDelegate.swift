@@ -159,7 +159,7 @@ class BMLT_MeetingSearch_AppDelegate: UIResponder, UIApplicationDelegate, BMLTiO
      The error String will be a key for localization, and will be pretty much worthless on its own.
      
      - parameter inLibInstance: the BMLTiOSLib instance.
-     - parameter error: The error that occurred.
+     - parameter error: The error that occurred.s
      */
     func bmltLibInstance(_ inLibInstance: BMLTiOSLib, errorOccurred error: Error) {
         BMLT_MeetingSearch_Prefs.prefs.commObject = nil

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E007999117B0DAE89B7B659 /* Pods_BMLT_NA_Meeting_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 368452745C962D77EBE3E691 /* Pods_BMLT_NA_Meeting_Search.framework */; };
 		771207431F3FD5DB008D9DB5 /* BMLT_MeetingSearch_PageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771207421F3FD5DB008D9DB5 /* BMLT_MeetingSearch_PageRenderer.swift */; };
 		772E73691F38EA1F006BD321 /* BMLT_MeetingSearch_ResultsTabControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772E73681F38EA1F006BD321 /* BMLT_MeetingSearch_ResultsTabControllerViewController.swift */; };
 		7746D64E1F3680CE00ACCC91 /* BMLT_MeetingSearch_Basic_NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7746D64D1F3680CE00ACCC91 /* BMLT_MeetingSearch_Basic_NavigationController.swift */; };
@@ -84,6 +85,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2CFDBFDC445B54FA967145E0 /* Pods-BMLT NA Meeting Search.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLT NA Meeting Search.release.xcconfig"; path = "Target Support Files/Pods-BMLT NA Meeting Search/Pods-BMLT NA Meeting Search.release.xcconfig"; sourceTree = "<group>"; };
+		368452745C962D77EBE3E691 /* Pods_BMLT_NA_Meeting_Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BMLT_NA_Meeting_Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BA9A11F21888C10774B2C9A /* Pods-BMLT NA Meeting Search.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BMLT NA Meeting Search.debug.xcconfig"; path = "Target Support Files/Pods-BMLT NA Meeting Search/Pods-BMLT NA Meeting Search.debug.xcconfig"; sourceTree = "<group>"; };
 		771207421F3FD5DB008D9DB5 /* BMLT_MeetingSearch_PageRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMLT_MeetingSearch_PageRenderer.swift; sourceTree = "<group>"; };
 		7720C748202095D800474EE3 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		77217A8B1F3A2AF80094119E /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4E5D2CF2311AAA6009D0015 /* BMLTiOSLib.framework in Frameworks */,
+				4E007999117B0DAE89B7B659 /* Pods_BMLT_NA_Meeting_Search.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +210,7 @@
 				77C69F1B1F2E8826002278FB /* NA Meeting Search */,
 				77ECF9361F2E95A0007DC628 /* Misc. */,
 				D4BD0B8F22F366C600F57048 /* Frameworks */,
+				92940E2BF9744B5B428A56A0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,9 +269,19 @@
 			name = "Main View Controllers and Views";
 			sourceTree = "<group>";
 		};
+		92940E2BF9744B5B428A56A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BA9A11F21888C10774B2C9A /* Pods-BMLT NA Meeting Search.debug.xcconfig */,
+				2CFDBFDC445B54FA967145E0 /* Pods-BMLT NA Meeting Search.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D4BD0B8F22F366C600F57048 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				368452745C962D77EBE3E691 /* Pods_BMLT_NA_Meeting_Search.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,6 +313,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77C69F2D1F2E8826002278FB /* Build configuration list for PBXNativeTarget "BMLT NA Meeting Search" */;
 			buildPhases = (
+				D1F75B90CF76B03CF8308CBA /* [CP] Check Pods Manifest.lock */,
 				778F41C91FE010E2005682E8 /* SwiftLint */,
 				77C69F151F2E8826002278FB /* Sources */,
 				77C69F171F2E8826002278FB /* Resources */,
@@ -415,6 +432,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if test -f \"${PROJECT_DIR}/Pods/SwiftLint/swiftlint\"; then\n    \"${PROJECT_DIR}/Pods/SwiftLint/swiftlint\"\nfi\n";
+		};
+		D1F75B90CF76B03CF8308CBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BMLT NA Meeting Search-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -635,11 +674,12 @@
 		};
 		77C69F2E1F2E8826002278FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BA9A11F21888C10774B2C9A /* Pods-BMLT NA Meeting Search.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 3000;
-				DEVELOPMENT_TEAM = P53V4JS928;
+				DEVELOPMENT_TEAM = C37G2K96EF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -650,7 +690,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.NA-Meeting-Search";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbreidenbach.BMTLiOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -659,11 +699,12 @@
 		};
 		77C69F2F1F2E8826002278FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CFDBFDC445B54FA967145E0 /* Pods-BMLT NA Meeting Search.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 3000;
-				DEVELOPMENT_TEAM = P53V4JS928;
+				DEVELOPMENT_TEAM = C37G2K96EF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -674,7 +715,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "net.magshare.NA-Meeting-Search";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fbreidenbach.BMTLiOSApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
